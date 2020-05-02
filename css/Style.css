@@ -2,5 +2,31 @@ p{
     color:black;
 }
 h1{
-    font-family= Impact;
+    font-family: Impact;
+}
+h4{
+    color: white;
+    background-color: grey;
+}
+body{
+    color: #000000;
+    background-color: #FFFFFF;
+    font-family: Times, Arial, cursive;
+}
+details{
+    font-style: italic;
+}
+summary{
+    font-style: normal;;
+}
+header{
+    background-color: mediumblue;
+    text-align: center;
+}
+footer{
+    background-color: mediumblue;
+    color: white;
+}
+a{
+    color: darkblue;
 }
