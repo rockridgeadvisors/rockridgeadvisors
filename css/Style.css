@@ -1,3 +1,6 @@
+body{
+    margin: 2%;
+}
 p{
     color:black;
 }
@@ -11,22 +14,95 @@ h4{
 body{
     color: #000000;
     background-color: #FFFFFF;
+    background-image: url("..\Images\Climber_on_rock_ridge.png");
+    background-image: #67b11c url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/29841/tick_2.png") 20px 50% no-repeat;
+    background-repeat: repeat;
+    background-position: 20px 10px;
     font-family: Times, Arial, cursive;
 }
+/*div{
+    background-image: #67b11c url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/29841/tick_2.png") 20px 50% no-repeat;
+            border: 2px solid #467813;
+            border-radius: 5px;
+            color: #fff;
+            font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+            padding: 15px 20px 15px 50px;
+            background-repeat: repeat;
+}*/
 details{
     font-style: italic;
 }
 summary{
     font-style: normal;;
 }
-header{
-    background-color: mediumblue;
+header, footer{
+    color: white;
+    background-color: #87CEEB;
+    /* can use degrees to control */
+    background: linear-gradient(to bottom right, #1E90FF, #87CEEB  );
+    /*background:  */
     text-align: center;
+    padding: 20px;
+    margin: 15px;
+    border-radius: 25px;
 }
 footer{
-    background-color: mediumblue;
-    color: white;
+    text-align: left;
+    clear: both;
 }
 a{
     color: darkblue;
+    text-align: center;
+    /* to put on top of each other:  display: block; And you can also set width, height */
+    /* can control by adding a:hover{}, a:focus{} , etc. sections and setting color and background color */
 }
+video{
+    background-color: #000000;
+}
+nav{
+
+}
+/* to format links in nav section*/
+nav a{
+
+}
+button{
+
+}
+/* to get items next to each other */
+section{
+    width: 30%;
+    display: inline-block;
+    float: left;
+    margin-right: 2%;
+
+}
+image{
+    /* can add width/height */
+    /* note that we need to go up a folder level to access images, e.g. "../images/image.jpg" 
+    If using background image, can vary the opacity. 
+    */
+}
+ul{
+    /* styling list
+        list-style-type
+        list-style-image
+        list-style-position
+        list-style
+    */
+}
+/*  Selectors - see shayhow.com Lesson 3 Complex Selectors
+    CSS tags
+    classes (use .class)
+    id -- which should be unique (use #id)
+    child selectors, e.g. article h2, which applies to all h2 in article
+    direct child selectors, e.g. article > h2 
+    sibling selector, e.g. h2 ~ p => h2's that come immediately after p
+    adjacent sibling, e.g. h2 + p
+*/
+/*  you can also style 
+    Universal (*{})
+    Attribute Selectorss a[href="info.html"], can use regexp's
+    Psuedo-Classes 
+    Psuedo-Elements
+*/
