@@ -3,6 +3,8 @@ body{
 }
 p{
     color:black;
+    background-color: #ffffff;
+    padding: 10px;
 }
 h1{
     font-family: Impact;
@@ -14,10 +16,12 @@ h4{
 body{
     color: #000000;
     background-color: #FFFFFF;
-    background-image: url("..\Images\Climber_on_rock_ridge.png");
+    background-image: url("../Images/Climber_on_rock_ridge.png");
     background-image: #67b11c url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/29841/tick_2.png") 20px 50% no-repeat;
-    background-repeat: repeat;
-    background-position: 20px 10px;
+    background-repeat: no-repeat;
+    height: 100%;
+    background-position: 100%;
+    background-size: cover;
     font-family: Times, Arial, cursive;
 }
 /*div{
