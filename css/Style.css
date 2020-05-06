@@ -17,11 +17,14 @@ body{
     color: #000000;
     background-color: #FFFFFF;
     background-image: url("../Images/Climber_on_rock_ridge.png");
-    background-image: #67b11c url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/29841/tick_2.png") 20px 50% no-repeat;
+    background-position: 100% 50%;
+    background-size: auto 66%;
     background-repeat: no-repeat;
-    height: 100%;
+    background-color: rgba(238, 238, 238, 0.5) !important;
+    background-blend-mode: color;
+    /*height: 100%;
     background-position: 100%;
-    background-size: cover;
+    background-size: cover;*/
     font-family: Times, Arial, cursive;
 }
 /*div{
@@ -33,8 +36,29 @@ body{
             padding: 15px 20px 15px 50px;
             background-repeat: repeat;
 }*/
+figure{
+    /*width: 30%;
+    height: 100%;*/
+    transition-property: width, height, transform;
+    transition-duration: 2s, 2s, 2s;
+}
+figure:hover{
+    transform: rotate(360deg);
+    /*height: 50%;
+    width: 30%;*/
+}
 details{
     font-style: italic;
+    transition-property: color, background;
+    transition-duration: .5s;
+    transition-timing-function: ease-in;
+    transition-delay: .5s;
+    width: 20%;
+}
+details:hover{
+    background-color: darkblue;
+    color: white;
+
 }
 summary{
     font-style: normal;;
@@ -81,12 +105,24 @@ section{
     margin-right: 2%;
 
 }
-image{
+::selection{
+    color: red;
+    outline: 5px dotted red;
+    /*outline-style: dotted;
+    outline-color: red;
+    outline-width: 5px;
+*/
+}
+img{
+    /*opacity: .5;*/
     /* can add width/height */
     /* note that we need to go up a folder level to access images, e.g. "../images/image.jpg" 
     If using background image, can vary the opacity. 
     */
 }
+/*img:hover{
+    opacity: 1.0;
+}*/
 ul{
     /* styling list
         list-style-type
