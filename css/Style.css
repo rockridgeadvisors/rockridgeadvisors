@@ -48,6 +48,7 @@ figure:hover{
     width: 30%;*/
 }
 details{
+    background-color: lightblue;
     font-style: italic;
     transition-property: color, background;
     transition-duration: .5s;
