@@ -15,58 +15,109 @@
     <link rel="stylesheet" href="css/Style.css">
 </head>
 <body class="ridge">
-    <header>
-        <nav>
-            <a href="index.html" style="color:whitesmoke" >Home</a>
-            <a href="Projects.html" style="color:whitesmoke">Projects</a>
-        </nav>
-         <img src="Images/RRA_Logo.jpg" alt = "Rock Ridge Advisors">        
-    </header>
-    <section>
-        <div> 
-            <figure>
-                <!-- could use width = "50%""  or pixel size "300px" -->
-                <img src="Images/Brian_Pennington_HeadShot.jpg"
-                    width = "20%"
-                    alt = "Brian Pennington">
-                <figcaption>Brian Pennington - Managing Partner</figcaption>
-            </figure>
+    <!-- <header>
+        <div class="p-2 grey mx-auto text-center" >
+            <img src="Images/RRA_Logo.jpg" ondblclick="myFunction()" class="img-fluid " alt = "Rock Ridge Advisors"> 
         </div> 
-        <aside>
-            <h4>Previous Experience</h4>
-            <p>
-                Starting in 2009, Mr. Pennington used his vaunted RiskSim analytics suite to implement a proprietary risk and analytics 
-                system at GoldenTree Asset Management and created a macro portfolio hedging overlay to manage the risk profile of its hedge funds.  
-                Prior to that, he was a co-founder and Managing Parter at Rock Ridge 
-                Advisors, ran money for Caxton Relative Value Holdings, and co-founded Convergence
-                Asset Management.  He began his career in 1986 at Salomon Brothers in the firm's renowned fixed-income proprietary
-                trading unit.  Mr. Pennington recieved his B.S. in Mathematics from Baylor University where 
-                he was the University's Highest Ranking Student and an M.B.A. from the University of Chicago where
-                he completed all of the requirements for a Ph.D. in Finance and Statistics except for a dissertation.
-                <a href="Pennington_Resume.docx" target="_blank">Curriculum Vitae</a>
-            </p>
-        </aside>
-        <details class="d-4">
-            <summary>Personal Philosopy</summary>
-            <blockquote cite John Milton, Paradise Lost>
-                The mind is its own place, and in itself can make a heaven of hell, a hell of heaven.
-                John Milton, Paradise Lost.
-                <br>
-                By making a conscious decision to "make heaven of hell" and sloughing off adversity 
-                and criticism like "water off the back of a duck", you can weather any storm.
-            </blockquote>
-        </details>
-    </section>
-    <footer>
+        
+        <nav class="navbar navbar-expand-md justify-content-center sticky-top  mt-2" role="navigation">
+            <div class="navbar-nav d-flex justify-content-center bg-primary">
+                <a role="presentation" class ="nav-item nav-link border border-white text-white rounded m-1 p-1" href="index.html"  >Home</a>
+                <a role="presentation" class ="nav-item nav-link border border-white text-white rounded m-1 p-1" href="Features.html" >Projects</a>
+                <a role="presentation" class ="nav-item nav-link border border-white text-white rounded m-1 p-1" href="AboutRRA.html" >About Us</a>
+            </div>
+        </nav>                          
+    </header> -->
+    <nav class="navbar navbar-expand-md navbar-primary bg-primary static-top">
+        <div class="container">
+            <a class="navbar-brand col-6" href="#">
+                <img src="Images/RRA_Logo.jpg" ondblclick="onVideoClick('Videos/Blazing_Saddles_Clip_New.mp4')" class="img-fluid w-66"  alt="Rock Ridge Advisors">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                <a role="presentation" class ="nav-item nav-link border border-white text-white rounded m-1 p-1" href="index.html"  >Home</a>
+                </li>
+                <li class="nav-item">
+                <a role="presentation" class ="nav-item nav-link border border-white text-white rounded m-1 p-1" href="Features.html" >Features</a>
+                </li>
+                <li class="nav-item">
+                <a role="presentation" class ="nav-item nav-link border border-white text-white rounded m-1 p-1" href="AboutRRA.html" >About Us</a>
+                </li>              
+            </ul>
+            </div>
+        </div>
+    </nav>
+
+    <script>
+        function onVideoClick(theLink) {
+            document.getElementById("video_pop").innerHTML = "<video autoplay muted loop id=\"the_Video\"><source src=\""+theLink+"\" type=\"video/webm\"></video>";
+            document.getElementById("video_pop").style.display="block";
+        } 
+
+        function onPopClick() {
+            document.getElementById("video_pop").style.display="none";
+            document.getElementById("video_pop").innerHTML = ""; 
+        }         
+        function myFunction() {
+          alert("The mind is its own place, and in itself can make a heaven of hell, a hell of heaven. \nJohn Milton, Paradise Lost.")
+        // <br>
+        // By making a conscious decision to "make a heaven of hell" and sloughing off adversity 
+        // and criticism like "water off the back of a duck", you can weather any storm.""
+    
+        }
+    </script>
+    <main role="main">
+        <!-- jumbotron -->
+        <div class="jumbotron col-6 opacity-4">
+          <div class="container">
+            <h1 class="display-3">Control your destiny!</h1>
+            <p>To control risk requires a sensitivity to the macroeconomic environment, blah blah</p>
+            <p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more &raquo;</a></p>
+          </div>
+        </div>
+        
+        <div class="container">
+          <!-- Example row of columns -->
+          <div class="row">
+            <div class="col-md-4 bg-white opacity-3">
+              <h2>Analytics</h2>
+              <p>The starting point is to have the capability to analyse the securities in the portfolio.  This includes not only being able to handle idiosyncatic or unusual features, 
+                  but also the ability to perform a flexible set of sensitivity analyis.  blah blah
+              </p>
+              <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
+            </div>
+            <div class="col-md-4 bg-white opacity-3">
+              <h2>Risk Measurement</h2>
+              <p>The analytics platform equips us to shock securities along various dimensions to measure sensitivities.  blah blah </p>
+              <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
+            </div>
+            <div class="col-md-4 bg-white opacity-3">
+              <h2>Risk Managemnt</h2>
+              <p>The final piece of the puzzle is to use the analytics and risk measurement to be able to formulate a plan to control/mitigate risk. blah blah </p>
+              <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
+            </div>
+          </div>
+  
+          <hr>
+  
+        </div> <!-- /container -->
+  
+      </main>
+    
+    <!-- <footer>
         <address>
-            <hr> <!-- this will show horizontal bar that can be styled -->
-            <a href="mailto:brian@rra-llc.com" style="color:whitesmoke" target="_blank">Brian Pennington</a>
+            <hr>
+            <a href="mailto:brian@rra-llc.com"  >Brian Pennington</a>
             <br>
             28 Rock Ridge Avenue<br>
             Greenwich, CT  06831
         </address>
         <br>
-    </footer>
+    </footer> -->
     <details>
         <br>
         <summary>Why Rock Ridge?</summary>

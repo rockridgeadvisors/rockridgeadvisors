@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    
+    <!-- Bootstrap CSS  v4 -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <title>Rock Ridge</title>
+    <link rel="icon" type="image/png" href="Images\RockRidge_Logo_Only.jpg" />
+    <link rel="stylesheet" href="css/Style.css">
+</head>
+<body class="ridge">
+    <!-- <header>
+        <div class="p-2 grey mx-auto text-center" >
+            <img src="Images/RRA_Logo.jpg" class="img-fluid " alt = "Rock Ridge Advisors"> 
+        </div> 
+        <nav class="navbar navbar-expand-md justify-content-center sticky-top  mt-2" role="navigation">
+            <div class="navbar-nav d-flex justify-content-center bg-primary">
+                <a role="presentation" class ="nav-item nav-link border border-white text-white rounded m-1 p-1" href="index.html"  >Home</a>
+                <a role="presentation" class ="nav-item nav-link border border-white text-white rounded m-1 p-1" href="Features.html" >Features</a>
+                <a role="presentation" class ="nav-item nav-link border border-white text-white rounded m-1 p-1" href="AboutRRA.html" >About Us</a>
+            </div>
+        </nav>                          
+    </header> -->
+    <nav class="navbar navbar-expand-md navbar-primary bg-primary static-top">
+        <div class="container">
+            <a class="navbar-brand col-6" href="#">
+                <img src="Images/RRA_Logo.jpg" class="img-fluid w-66"  alt="Rock Ridge Advisors">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                <a role="presentation" class ="nav-item nav-link border border-white text-white rounded m-1 p-1" href="index.html"  >Home</a>
+                </li>
+                <li class="nav-item">
+                <a role="presentation" class ="nav-item nav-link border border-white text-white rounded m-1 p-1" href="Features.html" >Features</a>
+                </li>
+                <li class="nav-item">
+                <a role="presentation" class ="nav-item nav-link border border-white text-white rounded m-1 p-1" href="AboutRRA.html" >About Us</a>
+                </li>              
+            </ul>
+            </div>
+        </div>
+    </nav>
+    
+    <div class="container ml-sm-2 ml-md-5 pl-sm-2 pl-md-5">
+        <div class="row">
+            <div class="p-1 col-sm-2 col-md-3  "> 
+                <figure class="figure bg-light border border-primary p-1 ">
+                    <!-- could use width = "50%""  or pixel size "300px" -->
+                    <img src="Images/Brian_Pennington_HeadShot.jpg" ondblclick="myPhilosophy()" class="figure-img img-fluid rounded"  alt = "Brian Pennington">
+                    <figcaption class="figure-caption font-weight-bold text-left">Brian Pennington - Managing Partner</figcaption>
+                </figure>
+                <script>
+                    function myPhilosophy() {
+                      alert('The mind is its own place, and in itself can make a heaven of hell, a hell of heaven. \nJohn Milton, Paradise Lost.\n\nBy making a conscious decision to "make a heaven of hell" and sloughing off adversity and criticism like "water off the back of a duck", you can weather any storm.')
+                    }
+                </script>
+            </div> 
+        </div>
+        <div class="row">
+            <div class="col-md-8 bg-light text-left border border-primary p-1">
+                <p>
+                    Starting in 2009, Mr. Pennington used his vaunted RiskSim analytics suite to implement a proprietary risk and analytics 
+                    system at GoldenTree Asset Management and created a macro portfolio hedging overlay to manage the risk profile of its hedge funds.  
+                    Prior to that, he was a co-founder and Managing Parter at Rock Ridge 
+                    Advisors, ran money for Caxton Relative Value Holdings, and co-founded Convergence
+                    Asset Management.  He began his career in 1986 at Salomon Brothers in the firm's renowned fixed-income proprietary
+                    trading unit.  Mr. Pennington recieved his B.S. in Mathematics from Baylor University where 
+                    he was the University's Highest Ranking Student and an M.B.A. from the University of Chicago where
+                    he completed all of the requirements for a Ph.D. in Finance and Statistics except for a dissertation.
+                    <a href="Pennington_Resume.docx" target="_blank">Curriculum Vitae</a>
+                </p>
+            </div>
+        </div>
+    </div>
+    <!-- <details class="d-4">
+        <summary>Personal Philosopy</summary>
+        <blockquote cite John Milton, Paradise Lost>
+            The mind is its own place, and in itself can make a heaven of hell, a hell of heaven.
+            John Milton, Paradise Lost.
+            <br>
+            By making a conscious decision to "make a heaven of hell" and sloughing off adversity 
+            and criticism like "water off the back of a duck", you can weather any storm.
+        </blockquote>
+    </details> -->
+</body>
