@@ -33,19 +33,25 @@
             <a class="navbar-brand col-6" href="#">
                 <img src="Images/RRA_Logo.jpg" ondblclick="onVideoClick('Videos/Blazing_Saddles_Clip_New.mp4')" class="img-fluid w-66"  alt="Rock Ridge Advisors">
             </a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
+            <button class="navbar-toggler border-white bg-white" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon fa fa-bars"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarResponsive">
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item active">
-                <a role="presentation" class ="nav-item nav-link border border-white text-white rounded m-1 p-1" href="index.html"  >Home</a>
+                    <a role="presentation" class ="nav-item nav-link border border-white text-white rounded m-1 p-1" href="index.html"  >Home</a>
                 </li>
                 <li class="nav-item">
-                <a role="presentation" class ="nav-item nav-link border border-white text-white rounded m-1 p-1" href="Features.html" >Features</a>
+                    <a role="presentation" class ="nav-item nav-link border border-white text-white rounded m-1 p-1" href="AddinSystem.html" >AddinSystem</a>
                 </li>
                 <li class="nav-item">
-                <a role="presentation" class ="nav-item nav-link border border-white text-white rounded m-1 p-1" href="AboutRRA.html" >About Us</a>
+                    <a role="presentation" class ="nav-item nav-link border border-white text-white rounded m-1 p-1" href="RiskSim.html" >RiskSim</a>
+                </li>
+                <li class="nav-item">
+                    <a role="presentation" class ="nav-item nav-link border border-white text-white rounded m-1 p-1" href="ReconciliationTools.html" >ReconciliationTools</a>
+                </li>
+                <li class="nav-item">
+                    <a role="presentation" class ="nav-item nav-link border border-white text-white rounded m-1 p-1" href="AboutRRa.html" >About Us</a>
                 </li>              
             </ul>
             </div>
@@ -72,32 +78,45 @@
     </script>
     <main role="main">
         <!-- jumbotron -->
-        <div class="jumbotron col-6 opacity-4">
+        <div class="jumbotron col-4 opacity-4">
           <div class="container">
-            <h1 class="display-3">Control your destiny!</h1>
-            <p>To control risk requires a sensitivity to the macroeconomic environment, blah blah</p>
-            <p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more &raquo;</a></p>
+            <h1 class="display-3" ondblclick="Invictus()">Control your destiny!</h1>
+            <!-- <p>To control risk requires a sensitivity to the macroeconomic environment, blah blah</p> -->
+            <script>
+            function Invictus() {
+            alert("Out of the night that covers me,\nBlack as the pit from pole to pole,\nI thank whatever gods may be\nFor my unconquerable soul.\n \
+                \nIn the fell clutch of circumstance\nI have not winced nor cried aloud.\nUnder the bludgeonings of chance\nMy head is bloody, but unbowed.\n \
+                \nBeyond this place of wrath and tears\nLooms but the Horror of the shade,\nAnd yet the menace of the years\nFinds and shall find me unafraid.\n \
+                \nIt matters not how strait the gate,\nHow charged with punishments the scroll,\nI am the master of my fate,\nI am the captain of my soul.\n \
+                \n\tInvictus, William Blake Henley"
+            )
+            }
+        </script>
+            <!-- <a class="btn btn-primary btn-lg" href="#" role="button">Learn more &raquo;</a></p> -->
           </div>
         </div>
         
         <div class="container">
           <!-- Example row of columns -->
           <div class="row">
-            <div class="col-md-4 bg-white opacity-3">
+            <div class="col-md-4 bg-white opacity-4">
               <h2>Analytics</h2>
               <p>The starting point is to have the capability to analyse the securities in the portfolio.  This includes not only being able to handle idiosyncatic or unusual features, 
-                  but also the ability to perform a flexible set of sensitivity analyis.  blah blah
+                  but also the ability to perform a flexible set of sensitivity analyis.
               </p>
               <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
             </div>
-            <div class="col-md-4 bg-white opacity-3">
+            <div class="col-md-4 bg-white opacity-4">
               <h2>Risk Measurement</h2>
-              <p>The analytics platform equips us to shock securities along various dimensions to measure sensitivities.  blah blah </p>
+              <p>The analytics platform equips us to shock securities along various dimensions to measure sensitivities. These sensitivies are agrregated in a proprietary framework
+                  that gives insight into the dynamics of the portfolios.
+              </p>
               <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
             </div>
-            <div class="col-md-4 bg-white opacity-3">
+            <div class="col-md-4 bg-white opacity-4">
               <h2>Risk Managemnt</h2>
-              <p>The final piece of the puzzle is to use the analytics and risk measurement to be able to formulate a plan to control/mitigate risk. blah blah </p>
+              <p>The final piece of the puzzle is to incorporate the analytics and risk measurement in a platform that is desgined to facilitate the formulation of a plan to 
+                  control/mitigate the risk of the portfolio.</p>
               <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
             </div>
           </div>
