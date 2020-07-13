@@ -2,8 +2,6 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Rock Ridge</title>
-    <link rel="icon" type="image/png" href="Images/RockRidge_Logo_Only.jpg" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
@@ -18,23 +16,12 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.0.0/jquery.magnific-popup.min.js"></script>
     <script src="scripts.js"></script>
     
+    <title>Rock Ridge</title>
+    <link rel="icon" type="image/png" href="Images/RockRidge_Logo_Only.jpg" />
     <link rel="stylesheet" href="css/Style.css">
 
 </head>
 <body class="ridge">
-    <!-- <header>
-        <div class="p-2 grey mx-auto text-center" >
-            <img src="Images/RRA_Logo.jpg" ondblclick="myFunction()" class="img-fluid " alt = "Rock Ridge Advisors"> 
-        </div> 
-        
-        <nav class="navbar navbar-expand-md justify-content-center sticky-top  mt-2" role="navigation">
-            <div class="navbar-nav d-flex justify-content-center bg-primary">
-                <a role="presentation" class ="nav-item nav-link border border-white text-white rounded m-1 p-1" href="index.html"  >Home</a>
-                <a role="presentation" class ="nav-item nav-link border border-white text-white rounded m-1 p-1" href="Features.html" >Projects</a>
-                <a role="presentation" class ="nav-item nav-link border border-white text-white rounded m-1 p-1" href="AboutRRA.html" >About Us</a>
-            </div>
-        </nav>                          
-    </header> -->
     <nav class="navbar navbar-expand-md navbar-primary bg-primary static-top">
         <div class="container">
             <a class="navbar-brand col-6" href="#">
@@ -54,9 +41,9 @@
                 <li class="nav-item">
                     <a class ="nav-item nav-link border border-white text-white rounded m-1 p-1" href="RiskSim.html" >RiskSim</a>
                 </li>
-                <li class="nav-item">
+                <!-- <li class="nav-item">
                     <a class ="nav-item nav-link border border-white text-white rounded m-1 p-1" href="ReconciliationTools.html" >ReconciliationTools</a>
-                </li>
+                </li> -->
                 <li class="nav-item">
                     <a class ="nav-item nav-link border border-white text-white rounded m-1 p-1" href="AboutRRa.html" >About Us</a>
                 </li>              
@@ -76,27 +63,31 @@
     </script>
     <main>
         <!-- jumbotron -->
-        <div class="jumbotron col-4 opacity-4">
-          <div class="container">
-            <h1 class="display-3" ondblclick="Invictus()">Control your destiny!</h1>
-            <!-- <p>To control risk requires a sensitivity to the macroeconomic environment, blah blah</p> -->
-            <script>
-            function Invictus() {
-            alert("Out of the night that covers me,\nBlack as the pit from pole to pole,\nI thank whatever gods may be\nFor my unconquerable soul.\n \
-                \nIn the fell clutch of circumstance\nI have not winced nor cried aloud.\nUnder the bludgeonings of chance\nMy head is bloody, but unbowed.\n \
-                \nBeyond this place of wrath and tears\nLooms but the Horror of the shade,\nAnd yet the menace of the years\nFinds and shall find me unafraid.\n \
-                \nIt matters not how strait the gate,\nHow charged with punishments the scroll,\nI am the master of my fate,\nI am the captain of my soul.\n \
-                \n\tInvictus, William Blake Henley"
-            )
-            }
-        </script>
-            <!-- <a class="btn btn-primary btn-lg" href="#" role="button">Learn more &raquo;</a></p> -->
+        <!-- <div class="jumbotron"> -->
+          <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-4 bg-white opacity-4">
+                    <h1 class="display-3" ondblclick="Invictus()">Control your destiny!</h1>
+                    <!-- <p>To control risk requires a sensitivity to the macroeconomic environment, blah blah</p> -->
+                    <script>
+                        function Invictus() {
+                        alert("Out of the night that covers me,\nBlack as the pit from pole to pole,\nI thank whatever gods may be\nFor my unconquerable soul.\n \
+                            \nIn the fell clutch of circumstance\nI have not winced nor cried aloud.\nUnder the bludgeonings of chance\nMy head is bloody, but unbowed.\n \
+                            \nBeyond this place of wrath and tears\nLooms but the Horror of the shade,\nAnd yet the menace of the years\nFinds and shall find me unafraid.\n \
+                            \nIt matters not how strait the gate,\nHow charged with punishments the scroll,\nI am the master of my fate,\nI am the captain of my soul.\n \
+                            \n\tInvictus, William Blake Henley"
+                        )
+                        }
+                    </script>
+                    <!-- <a class="btn btn-primary btn-lg" href="#" role="button">Learn more &raquo;</a></p> -->
+                </div>
+            </div>
           </div>
-        </div>
+        <!-- </div> -->
         
-        <div class="container">
+        <div class="container ml-10">
           <!-- Example row of columns -->
-          <div class="row">
+          <div class="row mt-5 ">
             <div id="video_pop" onclick="onPopClick()"></div>
             <div class="col-md-4 bg-white opacity-4">
               <h2>Analytics</h2>
@@ -113,10 +104,13 @@
               <p><a class="btn btn-secondary" href="RiskSim.html" role="button">View details &raquo;</a></p>
             </div>
             <div class="col-md-4 bg-white opacity-4">
-              <h2>Risk Managemnt</h2>
+              <h2>Risk Management</h2>
               <p>The final piece of the puzzle is to incorporate the analytics and risk measurement in a platform that is desgined to facilitate the formulation of a plan to 
-                  control/mitigate the risk of the portfolio.</p>
-              <!-- <p><a class="btn btn-secondary" href="AboutRRa.html" role="button">View details &raquo;</a></p> -->
+                  control/mitigate the risk of the portfolio.
+                <br><br>
+                Rock Ridge Advisors is uniquely positioned to help investors develop a framework for effectively managing their risk!
+            </p>
+              <p><a class="btn btn-secondary" href="AboutRRa.html" role="button">View details &raquo;</a></p>
             </div>
           </div>
   
