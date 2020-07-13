@@ -11,12 +11,24 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
     <title>Rock Ridge</title>
-    <link rel="icon" type="image/png" href="Images\RockRidge_Logo_Only.jpg" />
+    <link rel="icon" type="image/png" href="Images/RockRidge_Logo_Only.jpg" />
+    <!-- Lightbox -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.js"></script>
+        </script>
+    <!-- Video Popup -->
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.0.0/magnific-popup.min.css"></script> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.0.0/magnific-popup.min.css"/>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.0.0/jquery.magnific-popup.min.js"></script>
+    <script src="scripts.js"></script>
+    
     <link rel="stylesheet" href="css/Style.css">
+    
 </head>
 <body class="ridge">
     <nav class="navbar navbar-expand-md navbar-primary bg-primary static-top">
         <div class="container">
+            <!-- <a href="#headerPopup" id="headerVideoLink" target="_blank" class="navbar-brand col-6"> -->
             <a class="navbar-brand col-6" href="#">
                 <img src="Images/RRA_Logo.jpg" ondblclick="onVideoClick('Videos/Blazing_Saddles_Clip_New.mp4')" class="img-fluid w-66"  alt="Rock Ridge Advisors">
             </a>
@@ -26,82 +38,119 @@
             <div class="collapse navbar-collapse" id="navbarResponsive">
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item active">
-                    <a role="presentation" class ="nav-item nav-link border border-white text-white rounded m-1 p-1" href="index.html"  >Home</a>
+                    <a class ="nav-item nav-link border border-white text-white rounded m-1 p-1" href="index.html"  >Home</a>
                 </li>
                 <li class="nav-item">
-                    <a role="presentation" class ="nav-item nav-link border border-white text-white rounded m-1 p-1" href="AddinSystem.html" >AddinSystem</a>
+                    <a class ="nav-item nav-link border border-white text-white rounded m-1 p-1" href="AddinSystem.html" >AddinSystem</a>
                 </li>
                 <li class="nav-item">
-                    <a role="presentation" class ="nav-item nav-link border border-white text-white rounded m-1 p-1" href="RiskSim.html" >RiskSim</a>
+                    <a class ="nav-item nav-link border border-white text-white rounded m-1 p-1" href="RiskSim.html" >RiskSim</a>
                 </li>
                 <li class="nav-item">
-                    <a role="presentation" class ="nav-item nav-link border border-white text-white rounded m-1 p-1" href="ReconciliationTools.html" >ReconciliationTools</a>
+                    <a class ="nav-item nav-link border border-white text-white rounded m-1 p-1" href="ReconciliationTools.html" >ReconciliationTools</a>
                 </li>
                 <li class="nav-item">
-                    <a role="presentation" class ="nav-item nav-link border border-white text-white rounded m-1 p-1" href="AboutRRa.html" >About Us</a>
+                    <a class ="nav-item nav-link border border-white text-white rounded m-1 p-1" href="AboutRRa.html" >About Us</a>
                 </li>              
             </ul>
             </div>
         </div>
+        <div class="row">
+            <div class="col-sm-12">
+              <div id="headerPopup" class="mfp-hide embed-responsive embed-responsive-21by9">
+                <iframe class="embed-responsive-item" width="854" height="480" src="Videos/Blazing_Saddles_Clip_New.mp4" 
+                    frameborder="0" allow="autoplay; encrypted-media" allowfullscreen>
+                </iframe>                  
+              </div>
+              </div>
+          </div>
     </nav>
-<!-- <div class="jumbotron col-3 opacity-4"> -->
-        <div class="container ml-5">
-            <div class="row col-12 col-md-5 col-lg-3 bg-light ">
+    <div class="container-fluid mb-0 ml-3 mr-3">        
+        <div class="row">
+            <div id="video_pop" onclick="onPopClick()"></div>
+            <div class="col-6 col-md-4 col-lg-2 ml-3 mr-2 bg-light">
                 <h3 class=""><b>RiskSim</b>: a system designed to produce returns while controlling risk</h3>
                 <p>One of the core strengths of RiskSim is the insight that it provides into the potential drawdowns that a portfolio can face.  
                     The origins of the name come from the risk assessments that were generated using montecarlo simulation incorporating numerous "volatility environments"
                     and "correlation structures".  There are a number of different methodologies that are used to provide useful estimates for various activities
-                    from macro trading to high yield to distressed.
-                    <br><br>We highlight what we believe are some of RiskSim's key features.
+                    from macro trading to high yield to distressed.                   
                 </p>
-            </div>     
+           </div>
+           <div class="align-self-end col-8 text-left ml-3 mr-1 mt-5 mb-1">
+                <!-- <h3 class="">Notable Features</h3> -->
+                <div class="ml-3 mb-1"> 
+                    <details class="border border-primary">
+                        <summary>Scenario Shock Analysis</summary>
+                        <p>Devised methodology to shock portfolio securities.</p>            
+                    </details>
+                    <details class="border border-primary">
+                        <summary>Scenario Horizon Analysis</summary>
+                        <p>Devised methodology to analyze contribution of hedges.</p>            
+                    </details>
+                    <details class="border border-primary">
+                        <summary>Carry Analysis</summary>
+                        <p>Devised methodology to estimate "true" carry.</p>            
+                    </details>
+                    <details class="border border-primary">
+                        <summary>Regulatory</summary>
+                        <p>Devised methodology to perform Form-PF, AIFMD, and Opera reporting.</p>            
+                    </details>
+                    <details class="border border-primary">
+                        <summary>Liqudity Analysis</summary>
+                        <p>Devised methodology to analyze liquidity of portfolios.</p>            
+                    </details>
+                    <details class="border border-primary">
+                        <summary>Stress Indicators</summary>
+                        <p>Devised methodology to determine risk of moving into a systemic environment.</p>            
+                    </details>
+                    <details class="border border-primary">
+                        <summary>Portfolio Attribution</summary>
+                        <p>RiskSim has a unique approach to portfolio attribution that is useful for total-return portfolios.  The approach
+                            uses a hiearchical mapping of benchmarks and, at each level, compares the return of the portfolio securities to 
+                            the return that would have been generated by investing in the benchmarks.  This approach properly accounts for 
+                            intra-period trading to make this approach a true multi-period attribution approach.  This approach is colloquially
+                            called the "this-instead-of-that" approach because it answers the question of what the return would have been if the
+                            investment had been made in the benchmark ("that") instead of the security ("this").
+                        </p>            
+                    </details>
+                    <details class="border border-primary">
+                        <summary>Rate-Spread Decomposition</summary>
+                        <p>The P&L of a portfolio is decomposed into Rate P&L, Spread P&L, Distressed P&L, Non-Fixed Income P&L, Carry P&L,
+                            and FX P&L.  The Rate Sensitivity and Spread Sensitivity can be used to tie out to movements in rate and spread
+                            benchmarks.</p>
+                        <div class="container my-1">
+                            <div class="row m-1">
+                                <div class="col-4">
+                                <a href="Images/Rate-Spread Decomp.png" data-toggle="lightbox" data-gallery="gallery" class="col-md-4">
+                                <img src="Images/Rate-Spread Decomp.png" class="img-fluid rounded">
+                                </a>
+                                </div>
+                                <div class="col-7">
+                                <p>Sample output for some popular fixed income indices.  The columns would expand to show results by month.
+                                  <br><br>
+                                  Click to zoom!
+                                </p>
+                            </div>
+                            </div>  
+                        </div>       
+                    </details>
+                    <details class="border border-primary">
+                        <summary>Volatility Simulation</summary>
+                        <p>The reason that the realized distribution of many asset prices have fat tails, particularly for high frequencies,
+                            is that volatility is not constant.  RiskSim has a number of methods for simulating this behavior by getting
+                            volatility scenarios using partitioned historical data or by specifying the distribution of volatility.  
+                            In addition, correlations are notoriously unstable.  Combining volatility scenarios with correlation scenarios
+                            and sampling from those combinations yields a rich set of outcomes that can be used to produce a more
+                            realistic set of portfolio outcomes than using a single parameterization of the risk space.
+                        </p>            
+                    </details>
+                    <details class="border border-primary">
+                        <summary>Portfolio Volatility/Tracking Error</summary>
+                        <p>RiskSim uses duration-adjusted proxy mapping to generate estimates of portfolio volatility.  If there are
+                            well defined sub-indices, RiskSim can estimate the tracking error.</p>            
+                    </details>                    
+                </div>
+            </div>
         </div>
-    <!-- </div> -->
-    
-    <!-- <section class="Projects"> -->
-        <h3 class="container text-left ml-3 mt-5 bg-light bg-md-none opacity-4">Notable Features</h3>
-        <div class="container ml-3 mb-5"> 
-            <details>
-                <summary>Scenario Shock Analysis</summary>
-                <p>Devised methodology to shock portfolio securities.</p>            
-            </details>
-            <details>
-                <summary>Scenario Horizon Analysis</summary>
-                <p>Devised methodology to analyze contribution of hedges.</p>            
-            </details>
-            <details>
-                <summary>Carry Analysis</summary>
-                <p>Devised methodology to estimate "true" carry.</p>            
-            </details>
-            <details>
-                <summary>Regulatory</summary>
-                <p>Devised methodology to perform Form-PF, AIFMD, and Opera reporting.</p>            
-            </details>
-            <details>
-                <summary>Liqudity Analysis</summary>
-                <p>Devised methodology to analyze liquidity of portfolios.</p>            
-            </details>
-            <details>
-                <summary>Stress Indicators</summary>
-                <p>Devised methodology to determine risk of moving into a systemic environment.</p>            
-            </details>
-            <details>
-                <summary>Portfolio Attribution</summary>
-                <p>Devised methodology to analyze attribution for total return portfolios.</p>            
-            </details>
-            <details>
-                <summary>Rate-Spread Decomposition</summary>
-                <p>Devised methodology to break down P&L to analyse it's source.</p>            
-            </details>
-            <details>
-                <summary>Currency-adjusted Yield/Spreads</summary>
-                <p>Devised methodology to adjust yields and spread to reflect rate differentials and cross-currency basis.</p>            
-            </details>
-            <details>
-                <summary>Default Curve Analysis</summary>
-                <p>Devised flexible framework to evaluate CDS vs. cash securities for traders.</p>            
-            </details>
-            
-        </div>
-    <!-- </section> -->
+    </div>
 </body>

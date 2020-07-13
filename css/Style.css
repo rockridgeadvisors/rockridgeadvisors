@@ -28,14 +28,6 @@
     transform: translate(-50%, -50%);
 
 }
-  body{
-    /* margin: 2%; */
-}
-p{
-    /* color:black;
-    background-color: #ffffff;
-    padding: 10px; */
-}
 h1{
     font-family: Impact;
     text-align: center;
@@ -53,7 +45,7 @@ body{
     /* padding-top:100px; */
     /* background-size:cover; */
     background-repeat: no-repeat;
-    background-color: rgba(238, 238, 238, 0.0) !important;
+    background-color: rgba(238, 238, 238, 0.1) !important;
     background-blend-mode: color;
     height:100vh;
     /*height: 100%;
@@ -81,9 +73,6 @@ details{
     transition-delay: .5s;
     /* width: 20%; */
 }
-div{
-    /*float: right;*/
-}
 
 summary{
     font-style: normal;;
@@ -100,37 +89,16 @@ header, footer{
     border-radius: 25px; */
    
 }
-header img{
-    /* border: 5px #b31a1a; */
-    /* width: 40%; */
-}
+
 footer{
     text-align: left;
     clear: both;
 }
-a{
-    /* color: darkblue;
-    text-align: center; */
-    /* to put on top of each other:  display: block; And you can also set width, height */
-    /* can control by adding a:hover{}, a:focus{} , etc. sections and setting color and background color */
-}
+
 video{
     background-color: #000000;
 }
 
-
-section.projects{
-    /* display: inline-block;
-    width: 30%;
-    overflow: auto; */
-}
-/* to get items next to each other */
-section{
-    /* width: 30%;
-    display: inline-block;
-    margin-right: 2%; */
-
-}
 ::selection{
     color: red;
     outline: 5px dotted red;
@@ -139,25 +107,6 @@ section{
     outline-width: 5px;
 */
 }
-img{
-    /*opacity: .5;*/
-    /* can add width/height */
-    /* note that we need to go up a folder level to access images, e.g. "../images/image.jpg" 
-    If using background image, can vary the opacity. 
-    */
-}
-/*img:hover{
-    opacity: 1.0;
-}*/
-ul{
-    /* styling list
-        list-style-type
-        list-style-image
-        list-style-position
-        list-style
-    */
-}
-/*  Selectors - see shayhow.com Lesson 3 Complex Selectors
     CSS tags
     classes (use .class)
     id -- which should be unique (use #id)
@@ -203,19 +152,17 @@ ul{
   }
   
  
-div > details{
+details{
     background-color: white;
-    opacity:.9!important;
+    opacity:.8!important;
 }
-div > details:nth-child(even){
+details:nth-child(even){
     background-color: lightblue;
 }
 details:select{
     opacity:1!important;
 }
 details:hover{
-    /* background-color: rgb(0, 0, 139);
-    color: white; */
     opacity:1!important;
 }
 details[open] {

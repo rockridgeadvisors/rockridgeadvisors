@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Rock Ridge</title>
-    <link rel="icon" type="image/png" href="Images\RockRidge_Logo_Only.jpg" />
+    <link rel="icon" type="image/png" href="Images/RockRidge_Logo_Only.jpg" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
@@ -12,7 +12,14 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <!-- Video Popup -->
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.0.0/magnific-popup.min.css"></script> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.0.0/magnific-popup.min.css"/>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.0.0/jquery.magnific-popup.min.js"></script>
+    <script src="scripts.js"></script>
+    
     <link rel="stylesheet" href="css/Style.css">
+
 </head>
 <body class="ridge">
     <!-- <header>
@@ -39,35 +46,26 @@
             <div class="collapse navbar-collapse" id="navbarResponsive">
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item active">
-                    <a role="presentation" class ="nav-item nav-link border border-white text-white rounded m-1 p-1" href="index.html"  >Home</a>
+                    <a class ="nav-item nav-link border border-white text-white rounded m-1 p-1" href="index.html"  >Home</a>
                 </li>
                 <li class="nav-item">
-                    <a role="presentation" class ="nav-item nav-link border border-white text-white rounded m-1 p-1" href="AddinSystem.html" >AddinSystem</a>
+                    <a class ="nav-item nav-link border border-white text-white rounded m-1 p-1" href="AddinSystem.html" >AddinSystem</a>
                 </li>
                 <li class="nav-item">
-                    <a role="presentation" class ="nav-item nav-link border border-white text-white rounded m-1 p-1" href="RiskSim.html" >RiskSim</a>
+                    <a class ="nav-item nav-link border border-white text-white rounded m-1 p-1" href="RiskSim.html" >RiskSim</a>
                 </li>
                 <li class="nav-item">
-                    <a role="presentation" class ="nav-item nav-link border border-white text-white rounded m-1 p-1" href="ReconciliationTools.html" >ReconciliationTools</a>
+                    <a class ="nav-item nav-link border border-white text-white rounded m-1 p-1" href="ReconciliationTools.html" >ReconciliationTools</a>
                 </li>
                 <li class="nav-item">
-                    <a role="presentation" class ="nav-item nav-link border border-white text-white rounded m-1 p-1" href="AboutRRa.html" >About Us</a>
+                    <a class ="nav-item nav-link border border-white text-white rounded m-1 p-1" href="AboutRRa.html" >About Us</a>
                 </li>              
             </ul>
             </div>
         </div>
     </nav>
 
-    <script>
-        function onVideoClick(theLink) {
-            document.getElementById("video_pop").innerHTML = "<video autoplay muted loop id=\"the_Video\"><source src=\""+theLink+"\" type=\"video/webm\"></video>";
-            document.getElementById("video_pop").style.display="block";
-        } 
-
-        function onPopClick() {
-            document.getElementById("video_pop").style.display="none";
-            document.getElementById("video_pop").innerHTML = ""; 
-        }         
+    <script>         
         function myFunction() {
           alert("The mind is its own place, and in itself can make a heaven of hell, a hell of heaven. \nJohn Milton, Paradise Lost.")
         // <br>
@@ -76,7 +74,7 @@
     
         }
     </script>
-    <main role="main">
+    <main>
         <!-- jumbotron -->
         <div class="jumbotron col-4 opacity-4">
           <div class="container">
@@ -99,25 +97,26 @@
         <div class="container">
           <!-- Example row of columns -->
           <div class="row">
+            <div id="video_pop" onclick="onPopClick()"></div>
             <div class="col-md-4 bg-white opacity-4">
               <h2>Analytics</h2>
               <p>The starting point is to have the capability to analyse the securities in the portfolio.  This includes not only being able to handle idiosyncatic or unusual features, 
                   but also the ability to perform a flexible set of sensitivity analyis.
               </p>
-              <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
+              <p><a class="btn btn-secondary" href="AddinSystem.html" role="button">View details &raquo;</a></p>
             </div>
             <div class="col-md-4 bg-white opacity-4">
               <h2>Risk Measurement</h2>
               <p>The analytics platform equips us to shock securities along various dimensions to measure sensitivities. These sensitivies are agrregated in a proprietary framework
                   that gives insight into the dynamics of the portfolios.
               </p>
-              <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
+              <p><a class="btn btn-secondary" href="RiskSim.html" role="button">View details &raquo;</a></p>
             </div>
             <div class="col-md-4 bg-white opacity-4">
               <h2>Risk Managemnt</h2>
               <p>The final piece of the puzzle is to incorporate the analytics and risk measurement in a platform that is desgined to facilitate the formulation of a plan to 
                   control/mitigate the risk of the portfolio.</p>
-              <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
+              <!-- <p><a class="btn btn-secondary" href="AboutRRa.html" role="button">View details &raquo;</a></p> -->
             </div>
           </div>
   
@@ -137,15 +136,15 @@
         </address>
         <br>
     </footer> -->
-    <details>
-        <br>
-        <summary>Why Rock Ridge?</summary>
-        <a href="RockRidgeClip.html" target="_blank">Blazing Saddles</a>
+    <!-- <details> -->
+        <!-- <br> -->
+        <!-- <summary>Why Rock Ridge?</summary> -->
+        <!-- <a href="RockRidgeClip.html" target="_blank">Blazing Saddles</a> -->
         <!--<video autoplay>
             <source src="Videos\Blazing_Saddles_Clip_New.mp4" type="video/mp4">
             Videos are not supported in this browser.
         </video> -->
-    </details>
+    <!-- </details> -->
     
 </body>
 </html>
