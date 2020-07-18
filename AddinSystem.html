@@ -10,6 +10,12 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <!-- Video Popup -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.0.0/magnific-popup.min.css"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.0.0/magnific-popup.min.css"/>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.0.0/jquery.magnific-popup.min.js"></script>
+    <script src="scripts.js"></script>
+    
     <title>Rock Ridge-AddinSystem</title>
     <link rel="icon" type="image/png" href="Images/RockRidge_Logo_Only.jpg" />
     <link rel="stylesheet" href="css/Style.css">
@@ -29,7 +35,7 @@
                     <a class ="nav-item nav-link border border-white text-white rounded m-1 p-1" href="index.html"  >Home</a>
                 </li>
                 <li class="nav-item">
-                    <a class ="nav-item nav-link border border-white text-white rounded m-1 p-1" href="AddinSystem.html" >AddinSystem</a>
+                    <a class ="nav-item nav-link border border-white text-white rounded m-1 p-1 active" href="AddinSystem.html" >AddinSystem</a>
                 </li>
                 <li class="nav-item">
                     <a class ="nav-item nav-link border border-white text-white rounded m-1 p-1" href="RiskSim.html" >RiskSim</a>
@@ -46,6 +52,7 @@
     </nav>
     <div class="container">
         <div class="row">
+            <div id="video_pop" onclick="onPopClick()"></div>
             <div class="col-3 ml-3 mr-2">
                 <h3 class=""><b>Addinsystem</b>: evaluating complex securities in realtime.</h3>
                 <p>When the analytics functionality was created in the 1990's, the essential requirement was
@@ -61,20 +68,22 @@
                 <h3 class="">Notable Features</h3>
                 <div class="ml-3 mb-5"> 
                     <details>
-                        <summary>Scenario Shock Analysis</summary>
-                        <p>Devised methodology to shock portfolio securities.</p>            
+                        <summary>Structured Products - Full Intex Integration</summary>
+                        <p>RiskSim is fully integrated with Intex CMOSubs.  You can enter deal parameters via RiskSim or use sss files.</p>            
                     </details>
                     <details>
-                        <summary>Scenario Horizon Analysis</summary>
-                        <p>Devised methodology to analyze contribution of hedges.</p>            
+                        <summary>Spreadsheets are "realtime applications".</summary>
+                        <p>All objects can be instantiated in spreadsheets.  When combined with realtime price feeds, you can fit curves,
+                            analyze securities, and perform calculations in real time.</p>            
                     </details>
                     <details>
                         <summary>Carry Analysis</summary>
                         <p>Devised methodology to estimate "true" carry.</p>            
                     </details>
                     <details>
-                        <summary>Regulatory</summary>
-                        <p>Devised methodology to perform Form-PF, AIFMD, and Opera reporting.</p>            
+                        <summary>Regulatory Reporting</summary>
+                        <p>RiskSim is designed to produce any shocks that are needed:  absolute shocks, percentage shocks, etc.  This makes it
+                            easy to feed a data warehouse that can be used to perform Form-PF, AIFMD, and Opera reporting.</p>            
                     </details>
                     <details>
                         <summary>Liqudity Analysis</summary>
@@ -85,12 +94,17 @@
                         <p>Devised methodology to determine risk of moving into a systemic environment.</p>            
                     </details>
                     <details>
-                        <summary>Portfolio Attribution</summary>
-                        <p>Devised methodology to analyze attribution for total return portfolios.</p>            
+                        <summary>Curves for any purpose.</summary>
+                        <p>The only limitation is the existence of fitting securities.  Treasury curves.  Swap curves vs. 3M fixings or 6M fixings.
+                            Currency swap curves that reflect the fx basis.  OIS, EONIA, SONIA, SOFR.  Default curves fit to CDS.  
+                            You name it, RiskSim can produce it.
+                        </p>            
                     </details>
                     <details>
-                        <summary>Rate-Spread Decomposition</summary>
-                        <p>Devised methodology to break down P&L to analyse it's source.</p>            
+                        <summary>Broad Security Type Coverage</summary>
+                        <p>In addition to vanilla security types, RiskSim covers things such as BRL swaps, EM linkers, currency swaps.
+                            Over 100 security types.  Options with various payoffs including one-touch, binary and barrier options.
+                        </p>            
                     </details>
                     <details>
                         <summary>Currency-adjusted Yield/Spreads</summary>

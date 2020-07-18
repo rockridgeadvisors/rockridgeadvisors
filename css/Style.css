@@ -1,6 +1,3 @@
-.navbar-nav > .active > a{
-    color : aqua;
-}
 #headerPopup{
     width:75%;
     margin:0 auto;
@@ -170,4 +167,8 @@ details:hover{
 }
 details[open] {
     opacity:1!important;
+}
+.nav-item > .active {
+    /* color : darkblue; */
+    background:darkblue;
 }
