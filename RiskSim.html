@@ -76,32 +76,45 @@
                     from macro trading to high yield to distressed.                   
                 </p>
            </div>
-           <div class="align-self-end col-8 text-left ml-3 mr-1 mt-5 mb-1">
+           <div class="align-self-end col-8 col-md-6 col-lg-8 text-left ml-3 mr-1 mt-5 mb-1">
                 <!-- <h3 class="">Notable Features</h3> -->
                 <div class="ml-3 mb-1"> 
                     <details class="border border-primary">
                         <summary>Scenario Shock Analysis</summary>
-                        <p>Devised methodology to shock portfolio securities.</p>            
+                        <p>A proprietary method that uses ordinal ranks for securities to estimate ex-ante volatility.  
+                            This method is particularly useful for securities with no data, where the historical data is no longer relevant,
+                            or where the historical data is statistically ill-behaved.  
+                        </p>            
                     </details>
                     <details class="border border-primary">
                         <summary>Scenario Horizon Analysis</summary>
-                        <p>Devised methodology to analyze contribution of hedges.</p>            
+                        <p>The horizon analysis uses the estimated volatility of a state variable (price, spread, rates) to project the 
+                            movement of the underlying security and reprices the security on the horizon date.  This method is useful 
+                            for securities where volatility surfaces can be estimated using options or where we feel comfortable
+                            specifying the volatility for a scenario.  
+                        </thead></p>            
                     </details>
                     <details class="border border-primary">
                         <summary>Carry Analysis</summary>
-                        <p>Devised methodology to estimate "true" carry.</p>            
-                    </details>
-                    <details class="border border-primary">
-                        <summary>Regulatory</summary>
-                        <p>Devised methodology to perform Form-PF, AIFMD, and Opera reporting.</p>            
+                        <p>It is useful to have an estimate of "true" carry since carry can absorb adverse price movements over a given horizon.
+                            The RiskSim carry analysis is parameterized to exclude price amortization and/or inkind carry under certain conditions.
+                            For example, distressed securities generally trade to a (non-par) recovery or restructuring value, so including par-based price
+                            amortization would be misleading.
+                        </p>            
                     </details>
                     <details class="border border-primary">
                         <summary>Liqudity Analysis</summary>
-                        <p>Devised methodology to analyze liquidity of portfolios.</p>            
+                        <p>
+                            Properly measuring portfolio liquidity is a critical componenet of effective risk management.  The RiskSim approach includes ordinal
+                            ranking for each security, transition matrices to monitor the evolution of portfolio liquidity, and measures of liquidity provided
+                            by hedges, monitoring implicit as well as explicity leverage, etc.
+                        </p>            
                     </details>
                     <details class="border border-primary">
                         <summary>Stress Indicators</summary>
-                        <p>Devised methodology to determine risk of moving into a systemic environment.</p>            
+                        <p>Risk management in stressed or systemic environments is very different than risk management in "normal" environments.  
+                            RiskSim has a proprietary methodology to aid in monitoring the risk of transitioning to a stressed environment.
+                        </p>            
                     </details>
                     <details class="border border-primary">
                         <summary>Portfolio Attribution</summary>

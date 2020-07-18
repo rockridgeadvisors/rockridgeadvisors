@@ -86,17 +86,20 @@
                             easy to feed a data warehouse that can be used to perform Form-PF, AIFMD, and Opera reporting.</p>            
                     </details>
                     <details>
-                        <summary>Liqudity Analysis</summary>
-                        <p>Devised methodology to analyze liquidity of portfolios.</p>            
-                    </details>
-                    <details>
-                        <summary>Stress Indicators</summary>
-                        <p>Devised methodology to determine risk of moving into a systemic environment.</p>            
+                        <summary>Data Manipulation</summary>
+                        <p>RiskSim is designed for more than security analytics.  It is also designed to provide tools to aid in monitoring the
+                            macroeconomic environment--which is critical give then impact of macroeconomic shifts on risk management.
+                            A flexible set of price transformation, data containers and statistical methods enables this analysis.  
+                            Given the noise in most economic series, we are usually more interest in transformations (e.g. first differences or 
+                            log differences) of moving averages or other transformations of the raw data series (e.g. some moving average) than we are
+                            in the raw data series itself.  It is common to want to perform some sort of eigensystem analyis or logit regression
+                            to understand the implications of movements in economic data for risk management.
+                            .</p>            
                     </details>
                     <details>
                         <summary>Curves for any purpose.</summary>
                         <p>The only limitation is the existence of fitting securities.  Treasury curves.  Swap curves vs. 3M fixings or 6M fixings.
-                            Currency swap curves that reflect the fx basis.  OIS, EONIA, SONIA, SOFR.  Default curves fit to CDS.  
+                            Currency swap curves that reflect the fx basis.  OIS, EONIA, SONIA, SOFR, Prime, SIFMA.  Default curves fit to CDS.  
                             You name it, RiskSim can produce it.
                         </p>            
                     </details>
@@ -108,11 +111,19 @@
                     </details>
                     <details>
                         <summary>Currency-adjusted Yield/Spreads</summary>
-                        <p>Devised methodology to adjust yields and spread to reflect rate differentials and cross-currency basis.</p>            
+                        <p>While rate differentials have always been important in analysing investments in different currency, 
+                            following the GFC (Great Financial Crisis), cross-currency basis has played a much more prominent role in determining
+                            the relative attractiveness of investments in different currencies.  Currency-adjusted yields and spreads are
+                            particularly important for investors who routinely hedge their exposures back into a base currency.
+                            The Risksim methodology not only generates currency-adjusted rates and spreads, but can decompose the cashflows 
+                            for security analysis and can break out the "fx carry" when performing P&L analysis.</p>            
                     </details>
                     <details>
                         <summary>Default Curve Analysis</summary>
-                        <p>Devised flexible framework to evaluate CDS vs. cash securities for traders.</p>            
+                        <p>Devised flexible framework to evaluate CDS vs. cash securities for traders.  Switch from 100bp to 500bp running 
+                            or from spread to upfront points on the fly.
+
+                        </p>            
                     </details>                    
                 </div>
             </div>
