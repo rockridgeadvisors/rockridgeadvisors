@@ -20,7 +20,7 @@
     <link rel="icon" type="image/png" href="Images/RockRidge_Logo_Only.jpg" />
     <link rel="stylesheet" href="css/Style.css">
 </head>
-<body class="ridge">
+<body class="d-flex min-vh-100 flex-column">
     <nav class="navbar navbar-expand-md navbar-primary bg-primary static-top">
         <div class="container">
             <a class="navbar-brand col-6" href="#">
@@ -50,25 +50,9 @@
             </div>
         </div>
     </nav>
-    <div class="container">
+    <div class="container-fluid mx-5">
         <div class="row">
             <div id="video_pop" onclick="onPopClick()"></div>
-            <!-- <video class="m-video__video js-video-video" poster="/img/showreel.jpg" autoplay loop muted playsinline>
-                <source src="/Videos/Blazing_Saddles_Clip_New.MP4" type="video/mp4">
-            </video>
-            <button class="a-button m-video__button js-video-play-button" aria-pressed="true" aria-label="Play video" type="button">
-                <svg class="a-icon a-button__icon" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
-                  <title>Play video</title>
-                  <path d="M5.85355339,0.853553391 L12.2928932,7.29289322 C12.6834175,7.68341751 12.6834175,8.31658249 12.2928932,8.70710678 L5.85355339,15.1464466 C5.65829124,15.3417088 5.34170876,15.3417088 5.14644661,15.1464466 C5.05267842,15.0526784 5,14.9255015 5,14.7928932 L5,1.20710678 C5,0.930964406 5.22385763,0.707106781 5.5,0.707106781 C5.63260824,0.707106781 5.7597852,0.759785201 5.85355339,0.853553391 Z"></path>
-                </svg>
-              </button>
-              <button class="a-button m-video__button js-video-pause-button" aria-pressed="false" aria-label="Pause video" type="button">
-                <svg class="a-icon a-button__icon" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
-                  <title>Pause video</title>
-                  <rect x="4" y="1" width="3" height="14" rx="1"></rect>
-                  <rect x="9" y="1" width="3" height="14" rx="1"></rect>
-                </svg>
-              </button> -->
             <div class="ml-3 mr-2 col-6 col-md-4 col-lg-2 ml-3 mr-2 bg-light">
                 <h3 class=""><b>Addinsystem</b>: evaluating complex securities in realtime.</h3>
                 <p>When the analytics functionality was created in the 1990's, the essential requirement was
@@ -80,8 +64,8 @@
                     And if we find a new wrinkle, that wrinkle gets incorporated into the analytics in short order.
                 </p>
            </div>                        
-            <div class="align-self-end col-8 col-md-6 col-lg-8 text-left ml-3 mr-1 mt-5 mb-1 p-1">
-                <h3 class="bg-light">Notable Features</h3>
+            <div class="align-self-end col-8 col-md-6 text-left ml-3 mr-1 mt-5 mb-1 p-1">
+                <h3 class="col-4 bg-light">Notable Features</h3>
                 <div class="ml-3 mb-5"> 
                     <details>
                         <summary>Structured Products - Full Intex Integration</summary>
@@ -91,10 +75,6 @@
                         <summary>Spreadsheets are "realtime applications".</summary>
                         <p>All objects can be instantiated in spreadsheets.  When combined with realtime price feeds, you can fit curves,
                             analyze securities, and perform calculations in real time.</p>            
-                    </details>
-                    <details>
-                        <summary>Carry Analysis</summary>
-                        <p>Devised methodology to estimate "true" carry.</p>            
                     </details>
                     <details>
                         <summary>Regulatory Reporting</summary>
