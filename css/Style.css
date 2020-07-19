@@ -186,3 +186,62 @@ details[open] {
     /* color : darkblue; */
     background:darkblue;
 }
+ /* re robsimpson.digital */
+.no-enhance .m-video__button {
+    display: none;
+  }
+  .a-button {
+    background-color: #ffffff;
+    border-radius: 100%;
+    cursor: pointer;
+    position: relative;
+    transition: box-shadow 0.3s cubic-bezier(0.5, 0.61, 0.355, 1), opacity 0.3s cubic-bezier(0.5, 0.61, 0.355, 1);
+  }
+  
+  .a-button:focus {
+    box-shadow: 0 0 0 0.25rem rgba(255, 255, 255, 0.5);
+    outline: none;
+  }
+  
+  .a-button:hover {
+    opacity: 0.75;
+  }
+  
+  .a-button__icon {
+    padding: 0.625rem;
+  }
+  
+  .a-icon {
+    fill: #000000;
+    height: 2.1875rem;
+    vertical-align: top;
+    width: 2.1875rem;
+  }
+  
+  @media screen and (min-width: 32em) {
+    .a-icon {
+      height: 2.5rem;
+      width: 2.5rem;
+    }
+  }
+  .m-video {
+    background-color: #000000;
+    position: relative;
+  }
+  
+  .m-video__video {
+    display: block;
+    width: 100%;
+  }
+  
+  .m-video__button {
+    bottom: 0.9375rem;
+    left: 0.9375rem;
+    position: absolute;
+    z-index: 20;
+  }
+  
+  .m-video__button[aria-pressed="true"] {
+    display: none;
+  }
+  
