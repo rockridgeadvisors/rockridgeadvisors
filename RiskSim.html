@@ -25,7 +25,7 @@
     <link rel="stylesheet" href="css/Style.css">
     
 </head>
-<body class="d-flex min-vh-100 flex-column">
+<body >
     <nav class="navbar navbar-expand-md navbar-primary bg-primary static-top">
         <div class="container">
             <!-- <a href="#headerPopup" id="headerVideoLink" target="_blank" class="navbar-brand col-6"> -->
@@ -65,114 +65,117 @@
               </div>
           </div>
     </nav>
-    <div class="container-fluid mb-0 ml-3 mr-3">        
-        <div class="row">
-            <div id="video_pop" onclick="onPopClick()"></div>
-            <div class="col-6 col-md-4 col-lg-2 ml-3 nin-height-100 mr-2 bg-light">
-                <h3 class=""><b>RiskSim</b>: a system designed to produce returns while controlling risk</h3>
-                <p>One of the core strengths of RiskSim is the insight that it provides into the potential drawdowns that a portfolio can face.  
-                    The origins of the name come from the risk assessments that were generated using montecarlo simulation incorporating numerous "volatility environments"
-                    and "correlation structures".  There are a number of different methodologies that are used to provide useful estimates for various activities
-                    from macro trading to high yield to distressed.                   
-                </p>
-           </div>
-           <div class="align-self-end col-8 col-md-6 col-lg-8 text-left ml-3 mr-1 mt-5 mb-1 p-1">
-                <!-- <h3 class="">Notable Features</h3> -->
-                <div class="ml-3 mb-1"> 
-                    <details class="border border-primary">
-                        <summary>Scenario Shock Analysis</summary>
-                        <p>A proprietary method that uses ordinal ranks for securities to estimate ex-ante volatility.  
-                            This method is particularly useful for securities with no data, where the historical data is no longer relevant,
-                            or where the historical data is statistically ill-behaved.  
-                        </p>            
-                    </details>
-                    <details class="border border-primary">
-                        <summary>Scenario Horizon Analysis</summary>
-                        <p>The horizon analysis uses the estimated volatility of a state variable (price, spread, rates) to project the 
-                            movement of the underlying security and reprices the security on the horizon date.  This method is useful 
-                            for securities where volatility surfaces can be estimated using options or where we feel comfortable
-                            specifying the volatility for a scenario.  
-                        </thead></p>            
-                    </details>
-                    <details class="border border-primary">
-                        <summary>Carry Analysis</summary>
-                        <p>It is useful to have an estimate of "true" carry since carry can absorb adverse price movements over a given horizon.
-                            The RiskSim carry analysis is parameterized to exclude price amortization and/or inkind carry under certain conditions.
-                            For example, distressed securities generally trade to a (non-par) recovery or restructuring value, so including par-based price
-                            amortization would be misleading.
-                        </p>            
-                    </details>
-                    <details class="border border-primary">
-                        <summary>Liqudity Analysis</summary>
-                        <p>
-                            Properly measuring portfolio liquidity is a critical componenet of effective risk management.  The RiskSim approach includes ordinal
-                            ranking for each security, transition matrices to monitor the evolution of portfolio liquidity, and measures of liquidity provided
-                            by hedges, monitoring implicit as well as explicity leverage, etc.
-                        </p>            
-                    </details>
-                    <details class="border border-primary">
-                        <summary>Stress Indicators</summary>
-                        <p>Risk management in stressed or systemic environments is very different than risk management in "normal" environments.  
-                            RiskSim has a proprietary methodology to aid in monitoring the risk of transitioning to a stressed environment.
-                        </p>            
-                    </details>
-                    <details class="border border-primary">
-                        <summary>Portfolio Attribution</summary>
-                        <p>RiskSim has a unique approach to portfolio attribution that is useful for total-return portfolios.  The approach
-                            uses a hiearchical mapping of benchmarks and, at each level, compares the return of the portfolio securities to 
-                            the return that would have been generated by investing in the benchmarks.  This approach properly accounts for 
-                            intra-period trading to make this approach a true multi-period attribution approach.  This approach is colloquially
-                            called the "this-instead-of-that" approach because it answers the question of what the return would have been if the
-                            investment had been made in the benchmark ("that") instead of the security ("this").
-                        </p>            
-                    </details>
-                    <details class="border border-primary">
-                        <summary>Rate-Spread Decomposition</summary>
-                        <p>The P&L of a portfolio is decomposed into Rate P&L, Spread P&L, Distressed P&L, Non-Fixed Income P&L, Carry P&L,
-                            and FX P&L.  The Rate Sensitivity and Spread Sensitivity can be used to tie out to movements in rate and spread
-                            benchmarks.</p>
-                        <div class="container my-1">
-                            <div class="row m-1">
-                                <div class="col-4">
-                                <a href="Images/Rate-Spread Decomp.PNG" data-toggle="lightbox" data-gallery="gallery" class="col-md-4">
-                                <img src="Images/Rate-Spread Decomp.PNG" class="img-fluid rounded" alt="Rate-Spread Decomp Sample Report">
-                                </a>
+    <main class="d-flex min-vh-100 flex-column">
+        <div class="container-fluid mb-0 ml-3 mr-3">        
+            <div class="row">
+                <div id="video_pop" onclick="onPopClick()"></div>
+                <div class="col-6 col-md-4 col-lg-2 ml-3 nin-height-100 mr-2 bg-light">
+                    <h3 class=""><b>RiskSim</b>: a system designed to produce returns while controlling risk</h3>
+                    <p>One of the core strengths of RiskSim is the insight that it provides into the potential drawdowns that a portfolio can face.  
+                        The origins of the name come from the risk assessments that were generated using montecarlo simulation incorporating numerous "volatility environments"
+                        and "correlation structures".  There are a number of different methodologies that are used to provide useful estimates for various activities
+                        from macro trading to high yield to distressed.                   
+                    </p>
+            </div>
+            <div class="align-self-end col-8 col-md-6 col-lg-8 text-left ml-3 mr-1 mt-5 mb-1 p-1">
+                    <!-- <h3 class="">Notable Features</h3> -->
+                    <div class="ml-3 mb-1"> 
+                        <details class="border border-primary">
+                            <summary>Scenario Shock Analysis</summary>
+                            <p>A proprietary method that uses ordinal ranks for securities to estimate ex-ante volatility.  
+                                This method is particularly useful for securities with no data, where the historical data is no longer relevant,
+                                or where the historical data is statistically ill-behaved.  
+                            </p>            
+                        </details>
+                        <details class="border border-primary">
+                            <summary>Scenario Horizon Analysis</summary>
+                            <p>The horizon analysis uses the estimated volatility of a state variable (price, spread, rates) to project the 
+                                movement of the underlying security and reprices the security on the horizon date.  This method is useful 
+                                for securities where volatility surfaces can be estimated using options or where we feel comfortable
+                                specifying the volatility for a scenario.  
+                            </thead></p>            
+                        </details>
+                        <details class="border border-primary">
+                            <summary>Carry Analysis</summary>
+                            <p>It is useful to have an estimate of "true" carry since carry can absorb adverse price movements over a given horizon.
+                                The RiskSim carry analysis is parameterized to exclude price amortization and/or inkind carry under certain conditions.
+                                For example, distressed securities generally trade to a (non-par) recovery or restructuring value, so including par-based price
+                                amortization would be misleading.
+                            </p>            
+                        </details>
+                        <details class="border border-primary">
+                            <summary>Liqudity Analysis</summary>
+                            <p>
+                                Properly measuring portfolio liquidity is a critical componenet of effective risk management.  The RiskSim approach includes ordinal
+                                ranking for each security, transition matrices to monitor the evolution of portfolio liquidity, and measures of liquidity provided
+                                by hedges, monitoring implicit as well as explicity leverage, etc.
+                            </p>            
+                        </details>
+                        <details class="border border-primary">
+                            <summary>Stress Indicators</summary>
+                            <p>Risk management in stressed or systemic environments is very different than risk management in "normal" environments.  
+                                RiskSim has a proprietary methodology to aid in monitoring the risk of transitioning to a stressed environment.
+                            </p>            
+                        </details>
+                        <details class="border border-primary">
+                            <summary>Portfolio Attribution</summary>
+                            <p>RiskSim has a unique approach to portfolio attribution that is useful for total-return portfolios.  The approach
+                                uses a hiearchical mapping of benchmarks and, at each level, compares the return of the portfolio securities to 
+                                the return that would have been generated by investing in the benchmarks.  This approach properly accounts for 
+                                intra-period trading to make this approach a true multi-period attribution approach.  This approach is colloquially
+                                called the "this-instead-of-that" approach because it answers the question of what the return would have been if the
+                                investment had been made in the benchmark ("that") instead of the security ("this").
+                            </p>            
+                        </details>
+                        <details class="border border-primary">
+                            <summary>Rate-Spread Decomposition</summary>
+                            <p>The P&L of a portfolio is decomposed into Rate P&L, Spread P&L, Distressed P&L, Non-Fixed Income P&L, Carry P&L,
+                                and FX P&L.  The Rate Sensitivity and Spread Sensitivity can be used to tie out to movements in rate and spread
+                                benchmarks.</p>
+                            <div class="container my-1">
+                                <div class="row m-1">
+                                    <div class="col-4">
+                                    <a href="Images/Rate-Spread Decomp.PNG" data-toggle="lightbox" data-gallery="gallery" class="col-md-4">
+                                    <img src="Images/Rate-Spread Decomp.PNG" class="img-fluid rounded" alt="Rate-Spread Decomp Sample Report">
+                                    </a>
+                                    </div>
+                                    <div class="col-7">
+                                    <p>Sample output for some popular fixed income indices.  The columns would expand to show results by month.
+                                    <br><br>
+                                    Click to zoom!
+                                    </p>
                                 </div>
-                                <div class="col-7">
-                                <p>Sample output for some popular fixed income indices.  The columns would expand to show results by month.
-                                  <br><br>
-                                  Click to zoom!
-                                </p>
-                            </div>
-                            </div>  
-                        </div>       
-                    </details>
-                    <details class="border border-primary">
-                        <summary>Index Constituent Analysis</summary>
-                        <p>
-                            Many portfolios are regularly compared to a benchmark index.  For example, high yield funds are usually
-                            compared to the ML High Yield Index.  RiskSim can perform any analysis on any index for which the constituent data 
-                            is available.  For example, the Rate-Spread Decomposition can identify the precise source of the differences in returns
-                            between the portfolio and an index.
-                        </p>            
-                    </details>
-                    <details class="border border-primary">
-                        <summary>Volatility Simulation</summary>
-                        <p>The reason that the realized distribution of many asset prices have fat tails, particularly for high frequencies,
-                            is that volatility is not constant.  RiskSim has a number of methods for simulating this behavior by getting
-                            volatility scenarios using partitioned historical data or by specifying the distribution of volatility.  
-                            In addition, correlations are notoriously unstable.  Combining volatility scenarios with correlation scenarios
-                            and sampling from those combinations yields a rich set of outcomes that can be used to produce a more
-                            realistic set of portfolio outcomes than using a single parameterization of the risk space.
-                        </p>            
-                    </details>
-                    <details class="border border-primary">
-                        <summary>Portfolio Volatility/Tracking Error</summary>
-                        <p>RiskSim uses duration-adjusted proxy mapping to generate estimates of portfolio volatility.  If there are
-                            well defined sub-indices, RiskSim can estimate the tracking error.</p>            
-                    </details>                    
+                                </div>  
+                            </div>       
+                        </details>
+                        <details class="border border-primary">
+                            <summary>Index Constituent Analysis</summary>
+                            <p>
+                                Many portfolios are regularly compared to a benchmark index.  For example, high yield funds are usually
+                                compared to the ML High Yield Index.  RiskSim can perform any analysis on any index for which the constituent data 
+                                is available.  For example, the Rate-Spread Decomposition can identify the precise source of the differences in returns
+                                between the portfolio and an index.
+                            </p>            
+                        </details>
+                        <details class="border border-primary">
+                            <summary>Volatility Simulation</summary>
+                            <p>The reason that the realized distribution of many asset prices have fat tails, particularly for high frequencies,
+                                is that volatility is not constant.  RiskSim has a number of methods for simulating this behavior by getting
+                                volatility scenarios using partitioned historical data or by specifying the distribution of volatility.  
+                                In addition, correlations are notoriously unstable.  Combining volatility scenarios with correlation scenarios
+                                and sampling from those combinations yields a rich set of outcomes that can be used to produce a more
+                                realistic set of portfolio outcomes than using a single parameterization of the risk space.
+                            </p>            
+                        </details>
+                        <details class="border border-primary">
+                            <summary>Portfolio Volatility/Tracking Error</summary>
+                            <p>RiskSim uses duration-adjusted proxy mapping to generate estimates of portfolio volatility.  If there are
+                                well defined sub-indices, RiskSim can estimate the tracking error.</p>            
+                        </details>                    
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
+</main>
+
 </body>

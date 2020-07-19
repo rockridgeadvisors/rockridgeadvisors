@@ -20,7 +20,7 @@
     <link rel="icon" type="image/png" href="Images/RockRidge_Logo_Only.jpg" />
     <link rel="stylesheet" href="css/Style.css">
 </head>
-<body class="d-flex min-vh-100 flex-column">
+<body >
     <nav class="navbar navbar-expand-md navbar-primary bg-primary static-top">
         <div class="container">
             <a class="navbar-brand col-6" href="#">
@@ -50,79 +50,81 @@
             </div>
         </div>
     </nav>
-    <div class="container-fluid mx-5">
-        <div class="row">
-            <div id="video_pop" onclick="onPopClick()"></div>
-            <div class="ml-3 mr-2 col-6 col-md-4 col-lg-2 ml-3 mr-2 bg-light">
-                <h3 class=""><b>Addinsystem</b>: evaluating complex securities in realtime.</h3>
-                <p>When the analytics functionality was created in the 1990's, the essential requirement was
-                    that the analytics needed to be available in realtime.  Curves had to be calibrated using market inputs and securities had to be 
-                    evaluated using the latest prices. This was accomplished by wrapping the functionality in Excel addins, so we referred to the analytics as the AddinSystem.
-                    <br>
-                    One of the core strengths of the analytics is they incorporate all of the idiosyncratic features of the many securities that Rock Ridge Advisors
-                    has encountered over the last 30 years.  
-                    And if we find a new wrinkle, that wrinkle gets incorporated into the analytics in short order.
-                </p>
-           </div>                        
-            <div class="align-self-end col-8 col-md-6 text-left ml-3 mr-1 mt-5 mb-1 p-1">
-                <h3 class="col-4 bg-light">Notable Features</h3>
-                <div class="ml-3 mb-5"> 
-                    <details>
-                        <summary>Structured Products - Full Intex Integration</summary>
-                        <p>RiskSim is fully integrated with Intex CMOSubs.  You can enter deal parameters via RiskSim or use sss files.</p>            
-                    </details>
-                    <details>
-                        <summary>Spreadsheets are "realtime applications".</summary>
-                        <p>All objects can be instantiated in spreadsheets.  When combined with realtime price feeds, you can fit curves,
-                            analyze securities, and perform calculations in real time.</p>            
-                    </details>
-                    <details>
-                        <summary>Regulatory Reporting</summary>
-                        <p>RiskSim is designed to produce any shocks that are needed:  absolute shocks, percentage shocks, etc.  This makes it
-                            easy to feed a data warehouse that can be used to perform Form-PF, AIFMD, and Opera reporting.</p>            
-                    </details>
-                    <details>
-                        <summary>Data Manipulation</summary>
-                        <p>RiskSim is designed for more than security analytics.  It is also designed to provide tools to aid in monitoring the
-                            macroeconomic environment--which is critical give then impact of macroeconomic shifts on risk management.
-                            A flexible set of price transformation, data containers and statistical methods enables this analysis.  
-                            Given the noise in most economic series, we are usually more interest in transformations (e.g. first differences or 
-                            log differences) of moving averages or other transformations of the raw data series (e.g. some moving average) than we are
-                            in the raw data series itself.  It is common to want to perform some sort of eigensystem analyis or logit regression
-                            to understand the implications of movements in economic data for risk management.
-                            .</p>            
-                    </details>
-                    <details>
-                        <summary>Curves for any purpose.</summary>
-                        <p>The only limitation is the existence of fitting securities.  Treasury curves.  Swap curves vs. 3M fixings or 6M fixings.
-                            Currency swap curves that reflect the fx basis.  OIS, EONIA, SONIA, SOFR, Prime, SIFMA.  Default curves fit to CDS.  
-                            You name it, RiskSim can produce it.
-                        </p>            
-                    </details>
-                    <details>
-                        <summary>Broad Security Type Coverage</summary>
-                        <p>In addition to vanilla security types, RiskSim covers things such as BRL swaps, EM linkers, currency swaps.
-                            Over 100 security types.  Options with various payoffs including one-touch, binary and barrier options.
-                        </p>            
-                    </details>
-                    <details>
-                        <summary>Currency-adjusted Yield/Spreads</summary>
-                        <p>While rate differentials have always been important in analysing investments in different currency, 
-                            following the GFC (Great Financial Crisis), cross-currency basis has played a much more prominent role in determining
-                            the relative attractiveness of investments in different currencies.  Currency-adjusted yields and spreads are
-                            particularly important for investors who routinely hedge their exposures back into a base currency.
-                            The Risksim methodology not only generates currency-adjusted rates and spreads, but can decompose the cashflows 
-                            for security analysis and can break out the "fx carry" when performing P&L analysis.</p>            
-                    </details>
-                    <details>
-                        <summary>Default Curve Analysis</summary>
-                        <p>Devised flexible framework to evaluate CDS vs. cash securities for traders.  Switch from 100bp to 500bp running 
-                            or from spread to upfront points on the fly.
+    <main class="d-flex min-vh-100 flex-column">
+        <div class="container-fluid mx-5">
+            <div class="row">
+                <div id="video_pop" onclick="onPopClick()"></div>
+                <div class="ml-3 mr-2 col-6 col-md-4 col-lg-2 ml-3 mr-2 bg-light">
+                    <h3 class=""><b>Addinsystem</b>: evaluating complex securities in realtime.</h3>
+                    <p>When the analytics functionality was created in the 1990's, the essential requirement was
+                        that the analytics needed to be available in realtime.  Curves had to be calibrated using market inputs and securities had to be 
+                        evaluated using the latest prices. This was accomplished by wrapping the functionality in Excel addins, so we referred to the analytics as the AddinSystem.
+                        <br>
+                        One of the core strengths of the analytics is they incorporate all of the idiosyncratic features of the many securities that Rock Ridge Advisors
+                        has encountered over the last 30 years.  
+                        And if we find a new wrinkle, that wrinkle gets incorporated into the analytics in short order.
+                    </p>
+            </div>                        
+                <div class="align-self-end col-8 col-md-6 text-left ml-3 mr-1 mt-5 mb-1 p-1">
+                    <h3 class="col-4 bg-light">Notable Features</h3>
+                    <div class="ml-3 mb-5"> 
+                        <details>
+                            <summary>Structured Products - Full Intex Integration</summary>
+                            <p>RiskSim is fully integrated with Intex CMOSubs.  You can enter deal parameters via RiskSim or use sss files.</p>            
+                        </details>
+                        <details>
+                            <summary>Spreadsheets are "realtime applications".</summary>
+                            <p>All objects can be instantiated in spreadsheets.  When combined with realtime price feeds, you can fit curves,
+                                analyze securities, and perform calculations in real time.</p>            
+                        </details>
+                        <details>
+                            <summary>Regulatory Reporting</summary>
+                            <p>RiskSim is designed to produce any shocks that are needed:  absolute shocks, percentage shocks, etc.  This makes it
+                                easy to feed a data warehouse that can be used to perform Form-PF, AIFMD, and Opera reporting.</p>            
+                        </details>
+                        <details>
+                            <summary>Data Manipulation</summary>
+                            <p>RiskSim is designed for more than security analytics.  It is also designed to provide tools to aid in monitoring the
+                                macroeconomic environment--which is critical give then impact of macroeconomic shifts on risk management.
+                                A flexible set of price transformation, data containers and statistical methods enables this analysis.  
+                                Given the noise in most economic series, we are usually more interest in transformations (e.g. first differences or 
+                                log differences) of moving averages or other transformations of the raw data series (e.g. some moving average) than we are
+                                in the raw data series itself.  It is common to want to perform some sort of eigensystem analyis or logit regression
+                                to understand the implications of movements in economic data for risk management.
+                                .</p>            
+                        </details>
+                        <details>
+                            <summary>Curves for any purpose.</summary>
+                            <p>The only limitation is the existence of fitting securities.  Treasury curves.  Swap curves vs. 3M fixings or 6M fixings.
+                                Currency swap curves that reflect the fx basis.  OIS, EONIA, SONIA, SOFR, Prime, SIFMA.  Default curves fit to CDS.  
+                                You name it, RiskSim can produce it.
+                            </p>            
+                        </details>
+                        <details>
+                            <summary>Broad Security Type Coverage</summary>
+                            <p>In addition to vanilla security types, RiskSim covers things such as BRL swaps, EM linkers, currency swaps.
+                                Over 100 security types.  Options with various payoffs including one-touch, binary and barrier options.
+                            </p>            
+                        </details>
+                        <details>
+                            <summary>Currency-adjusted Yield/Spreads</summary>
+                            <p>While rate differentials have always been important in analysing investments in different currency, 
+                                following the GFC (Great Financial Crisis), cross-currency basis has played a much more prominent role in determining
+                                the relative attractiveness of investments in different currencies.  Currency-adjusted yields and spreads are
+                                particularly important for investors who routinely hedge their exposures back into a base currency.
+                                The Risksim methodology not only generates currency-adjusted rates and spreads, but can decompose the cashflows 
+                                for security analysis and can break out the "fx carry" when performing P&L analysis.</p>            
+                        </details>
+                        <details>
+                            <summary>Default Curve Analysis</summary>
+                            <p>Devised flexible framework to evaluate CDS vs. cash securities for traders.  Switch from 100bp to 500bp running 
+                                or from spread to upfront points on the fly.
 
-                        </p>            
-                    </details>                    
+                            </p>            
+                        </details>                    
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
+    </main>
 </body>
