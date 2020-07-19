@@ -8,7 +8,8 @@
         }); 
         //Video popup:  https://www.reddit.com/r/HTML/comments/31xiwa/html5_video_popup/
         function onVideoClick(theLink) {
-            document.getElementById("video_pop").innerHTML = "<video autoplay loop id=\"the_Video\"><source src=\""+theLink+"\" type=\"video/webm\"></video>";
+            // removed loop
+            document.getElementById("video_pop").innerHTML = "<video autoplay playsinline id=\"the_Video\"><source src=\""+theLink+"\" type=\"video/webm\"></video>";
             document.getElementById("video_pop").style.display="block";
         } 
 
