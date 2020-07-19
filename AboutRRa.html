@@ -56,17 +56,42 @@
             <div id="video_pop" onclick="onPopClick()"></div>
             <div class="p-1 col-sm-2 col-md-3  "> 
                 <figure class="figure bg-light border border-primary p-1 ">
-                    <!-- could use width = "50%""  or pixel size "300px" -->
-                    <img src="Images/Brian_Pennington_HeadShot.jpg" ondblclick="myPhilosophy()" class="figure-img img-fluid rounded"  alt = "Brian Pennington">
+                    <!-- To fire on click -->
+                    <img src="Images/Brian_Pennington_HeadShot.jpg" data-toggle="modal" data-target="#MyPhilosophyModal" class="figure-img img-fluid rounded"  alt = "Brian Pennington">
+                    <!-- To fire on double-click -->
+                    <!-- <img src="Images/Brian_Pennington_HeadShot.jpg" ondblclick="myPhilosophy()" class="figure-img img-fluid rounded"  alt = "Brian Pennington"> -->
                     <figcaption class="figure-caption font-weight-bold text-left">Brian Pennington - Managing Partner</figcaption>
                 </figure>
                 <script>
                     function myPhilosophy() {
-                      alert('The mind is its own place, and in itself can make a heaven of hell, a hell of heaven. \nJohn Milton, Paradise Lost.\n\nBy making a conscious decision to "make a heaven of hell" and sloughing off adversity and criticism like "water off the back of a duck", you can weather any storm.')
+                        $('#MyPhilosophyModal').modal('toggle');
                     }
                 </script>
             </div> 
         </div>
+        <div id="MyPhilosophyModal" class="modal fade" tabindex="-1" role="dialog">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Personal Philosophy</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <p>
+                            The mind is its own place, and in itself can make a heaven of hell, a hell of heaven. <br>John Milton, Paradise Lost.
+                            <br><br>By making a conscious decision to "make a heaven of hell" and sloughing off adversity and criticism like "water off the back of a duck", 
+                            you can weather any storm.'                    
+                        </p>
+                    </div>                  
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
         <div class="row">
             <div class="col-md-8 bg-light text-left border border-primary p-1">
                 <p>

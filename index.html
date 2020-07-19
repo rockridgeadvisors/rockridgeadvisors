@@ -21,7 +21,7 @@
     <link rel="stylesheet" href="css/Style.css">
 
 </head>
-<body class="ridge">
+<body class="d-flex min-vh-100 flex-column">
     <nav class="navbar navbar-expand-md navbar-primary bg-primary static-top">
         <div class="container">
             <a class="navbar-brand col-6" href="#">
@@ -51,68 +51,84 @@
             </div>
         </div>
     </nav>
-    <main>
-        <!-- jumbotron -->
-        <!-- <div class="jumbotron"> -->
-          <div class="container-fluid">
-            <div class="row">
-                <div class="col-md-4 bg-white opacity-4">
-                    <h1 class="display-3" ondblclick="Invictus()">Control your destiny!</h1>
+    <!-- <main> -->
+        <div class="container-fluid my-auto">
+            <div class="row my-10 py-10">
+                <div class="col-12 col-md-4 col-lg-6 bg-white opacity-4">
+                    <!-- To fire on click -->
+                    <h1 class="display-3" data-toggle="modal" data-target="#InvictusModal">Control your destiny!</h1>
+                    <!-- To fire on double-click -->
+                    <!-- <h1 class="display-3" ondblclick="Invictus()">Control your destiny!</h1> -->
                     <!-- <p>To control risk requires a sensitivity to the macroeconomic environment, blah blah</p> -->
                     <script>
                         function Invictus() {
-                        alert("Out of the night that covers me,\n  Black as the pit from pole to pole, \
-                            \nI thank whatever gods may be\n  For my unconquerable soul.\n \
-                            \nIn the fell clutch of circumstance\n  I have not winced nor cried aloud. \
-                            \nUnder the bludgeonings of chance\n  My head is bloody, but unbowed.\n \
-                            \nBeyond this place of wrath and tears\n  Looms but the Horror of the shade, \
-                            \nAnd yet the menace of the years\n  Finds and shall find me unafraid.\n \
-                            \nIt matters not how strait the gate,\n  How charged with punishments the scroll, \
-                            \nI am the master of my fate,\n  I am the captain of my soul.\n \
-                            \n    Invictus, William Ernest Henley"
-                        )
+                            $('#InvictusModal').modal('toggle');
                         }
                     </script>
-                    <!-- <a class="btn btn-primary btn-lg" href="#" role="button">Learn more &raquo;</a></p> -->
                 </div>
             </div>
-          </div>
-        <!-- </div> -->
-        
-        <div class="container ml-10">
+        </div>
+        <div id="InvictusModal" class="modal fade" tabindex="-1" role="dialog">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title">Invictus, William Ernest Henley</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <p>Out of the night that covers me,<br>&nbsp;&nbsp;Black as the pit from pole to pole, 
+                    <br>I thank whatever gods may be<br>&nbsp;&nbsp;  For my unconquerable soul.<br> 
+                    <br>In the fell clutch of circumstance<br>&nbsp;&nbsp;  I have not winced nor cried aloud. 
+                    <br>Under the bludgeonings of chance<br>&nbsp;&nbsp;  My head is bloody, but unbowed.<br> 
+                    <br>Beyond this place of wrath and tears<br>&nbsp;&nbsp;  Looms but the Horror of the shade, 
+                    <br>And yet the menace of the years<br>&nbsp;&nbsp;  Finds and shall find me unafraid.<br> 
+                    <br>It matters not how strait the gate,<br>&nbsp;&nbsp;  How charged with punishments the scroll, 
+                    <br>I am the master of my fate,<br>&nbsp;&nbsp;  I am the captain of my soul.<br>
+                </p>
+                </div>
+                <div class="modal-footer">
+                  <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+              </div>
+            </div>
+        </div>
+        <div class="container align-self-bottom my-auto ml-10">
           <!-- Example row of columns -->
           <div class="row mt-5 ">
             <div id="video_pop" onclick="onPopClick()"></div>
-            <div class="col-md-4 bg-white opacity-4">
+            <div class="section col-md-4">
               <h2>Analytics</h2>
               <p>The starting point is to have the capability to analyse the securities in the portfolio.  This includes not only being able to handle idiosyncatic or unusual features, 
                   but also the ability to perform a flexible set of sensitivity analyis.
               </p>
-              <p><a class="btn btn-secondary" href="AddinSystem.html" role="button">View details &raquo;</a></p>
+              <p><a class="btn btn-primary" href="AddinSystem.html" role="button">View details &raquo;</a></p>
             </div>
-            <div class="col-md-4 bg-white opacity-4">
+            <div class="section col-md-4">
               <h2>Risk Measurement</h2>
               <p>The analytics platform equips us to shock securities along various dimensions to measure sensitivities. These sensitivies are agrregated in a proprietary framework
                   that gives insight into the dynamics of the portfolios.
               </p>
-              <p><a class="btn btn-secondary" href="RiskSim.html" role="button">View details &raquo;</a></p>
+              <p><a class="btn btn-primary" href="RiskSim.html" role="button">View details &raquo;</a></p>
             </div>
-            <div class="col-md-4 bg-white opacity-4">
+            <div class="section col-md-4">
               <h2>Risk Management</h2>
               <p>The final piece of the puzzle is to incorporate the analytics and risk measurement in a platform that is desgined to facilitate the formulation of a plan to 
                   control/mitigate the risk of the portfolio.
                 <br><br>
                 Rock Ridge Advisors is uniquely positioned to help investors develop a framework for effectively managing their risk!
             </p>
-              <p><a class="btn btn-secondary" href="AboutRRa.html" role="button">View details &raquo;</a></p>
+              <p><a class="btn btn-primary" href="AboutRRa.html" role="button">View details &raquo;</a></p>
             </div>
           </div>
   
-          <hr>
+          <!-- <hr> -->
   
         </div> <!-- /container -->
   
-      </main>
+      <!-- </main> -->
     
     <!-- <footer>
         <address>

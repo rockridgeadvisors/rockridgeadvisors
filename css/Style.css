@@ -95,9 +95,9 @@ footer{
     clear: both;
 }
 
-video{
+/* video{
     background-color: #000000;
-}
+} */
 
 ::selection{
     color: red;
@@ -107,7 +107,7 @@ video{
     outline-width: 5px;
 */
 }
-    CSS tags
+   /* CSS tags
     classes (use .class)
     id -- which should be unique (use #id)
     child selectors, e.g. article h2, which applies to all h2 in article
@@ -166,6 +166,20 @@ details:hover{
     opacity:1!important;
 }
 details[open] {
+    opacity:1!important;
+}
+.section{
+    background-color: white;
+    opacity:.8!important;
+}
+.section:select{
+    opacity:1!important;
+}
+.section:hover,
+.section:focus{
+    opacity:1!important;
+}
+.section:active {
     opacity:1!important;
 }
 .nav-item > .active {
