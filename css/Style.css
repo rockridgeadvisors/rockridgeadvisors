@@ -186,4 +186,6 @@ details[open] {
     /* color : darkblue; */
     background:darkblue;
 }
- 
+main {
+    min-height: 80vh!important;
+}
