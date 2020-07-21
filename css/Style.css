@@ -96,21 +96,34 @@ footer{
   }
   
  
-details,
-.section{
+details{
     background-color: #FFFFFF;
     opacity:.8!important;
 }
 details:nth-child(even){
     background-color: #ADD8E6;
 }
-details:select,
-details:hover,
-details[open],
-.section:select,
+details:select{
+    opacity:1!important;
+}
+details:hover{
+    opacity:1!important;
+}
+details[open] {
+    opacity:1!important;
+}
+.section{
+    background-color: #FFFFFF;
+    opacity:.8!important;
+}
+.section:select{
+    opacity:1!important;
+}
 .section:hover,
-.section:focus,
-.section:active{
+.section:focus{
+    opacity:1!important;
+}
+.section:active {
     opacity:1!important;
 }
 .nav-item > .active {
