@@ -189,3 +189,9 @@ details[open] {
 main {
     min-height: 80vh!important;
 }
+.fa-superpowers,
+.fa-sliders-h,
+.fa-bar-chart,
+.fa-cubes {
+    color: #0000CD; /* 8B dark, CD medium, FF blue
+}
