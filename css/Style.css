@@ -1,12 +1,4 @@
-#headerPopup{
-    width:75%;
-    margin:0 auto;
-  }
-  
-  #headerPopup iframe{
-    width:100%;
-    margin:0 auto;
-  }
+
   #video_pop {
     z-index: 9999; 
     position: absolute; 
@@ -32,40 +24,19 @@ h1{
     font-family: Impact;
     text-align: center;
 }
-h4{
-    color: white;
-    background-color: grey;
-}
 body{
     color: #000000;
     background-color: #FFFFFF;
     background-image: url("../Images/Climber_on_rock_ridge.png");
     background-position: 100% 50%;
     background-size: auto 66%;
-    /* padding-top:100px; */
-    /* background-size:cover; */
     background-repeat: no-repeat;
     background-color: rgba(238, 238, 238, 0.1) !important;
     background-blend-mode: color;
     height:100vh;
-    /*height: 100%;
-    background-position: 100%;
-    background-size: cover;*/
-    /* font-family: Times, Arial, cursive; */
-}
-figure{
-    /*width: 30%;
-    height: 100%;*/
-    /* transition-property: width, height, transform;
-    transition-duration: 2s, 2s, 2s; */
-}
-figure:hover{
-    /* transform: rotate(360deg);
-    height: 50%;
-    width: 30%; */
 }
 details{
-    background-color: lightblue;
+    background-color: #ADD8E6;
     font-style: italic;
     transition-property: color, background;
     transition-duration: .5s;
@@ -78,16 +49,10 @@ summary{
     font-style: normal;;
 }
 header, footer{
-    color: white;
+    color: #FFFFFF;
     background-color: #87CEEB;
     /* can use degrees to control */
     background: linear-gradient(to bottom right, #1E90FF, #87CEEB  );
-    /*background:  */
-    /* text-align: center;
-    padding: 10px;
-    margin: 15px;
-    border-radius: 25px; */
-   
 }
 
 footer{
@@ -95,32 +60,11 @@ footer{
     clear: both;
 }
 
-/* video{
-    background-color: #000000;
-} */
-
 ::selection{
-    color: red;
-    outline: 5px dotted red;
-    /*outline-style: dotted;
-    outline-color: red;
-    outline-width: 5px;
-*/
+    color: #FF0000;
+    outline: 5px dotted #FF0000;
 }
-   /* CSS tags
-    classes (use .class)
-    id -- which should be unique (use #id)
-    child selectors, e.g. article h2, which applies to all h2 in article
-    direct child selectors, e.g. article > h2 
-    sibling selector, e.g. h2 ~ p => h2's that come immediately after p
-    adjacent sibling, e.g. h2 + p
-*/
-/*  you can also style 
-    Universal (*{})
-    Attribute Selectorss a[href="info.html"], can use regexp's
-    Psuedo-Classes 
-    Psuedo-Elements
-*/
+ 
 .opacity-0 {
     opacity:0!important;
   }
@@ -153,11 +97,11 @@ footer{
   
  
 details{
-    background-color: white;
+    background-color: #FFFFFF;
     opacity:.8!important;
 }
 details:nth-child(even){
-    background-color: lightblue;
+    background-color: #ADD8E6;
 }
 details:select{
     opacity:1!important;
@@ -169,7 +113,7 @@ details[open] {
     opacity:1!important;
 }
 .section{
-    background-color: white;
+    background-color: #FFFFFF;
     opacity:.8!important;
 }
 .section:select{
@@ -184,11 +128,13 @@ details[open] {
 }
 .nav-item > .active {
     /* color : darkblue; */
-    background:darkblue;
+    background:#00008B;
 }
-main {
+main,
+.Risksim  {
     min-height: 80vh!important;
 }
+
 .fa-superpowers,
 .fa-sliders-h,
 .fa-bar-chart,

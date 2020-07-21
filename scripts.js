@@ -1,12 +1,4 @@
-    // Video Popup: https://www.solodev.com/blog/web-design/how-to-add-pop-up-video-into-a-website.stml
-    $( document ).ready(function() 
-        { 
-            $('#headerVideoLink').magnificPopup(
-                { type:'inline', midClick: true // Allow opening popup on middle mouse click. Always set it to true if you don't provide alternative source in href. 
-                }
-            ); 
-        }); 
-        //Video popup:  https://www.reddit.com/r/HTML/comments/31xiwa/html5_video_popup/
+    //Video popup:  https://www.reddit.com/r/HTML/comments/31xiwa/html5_video_popup/
         function onVideoClick(theLink) {
             // removed loop
             // document.getElementById("video_pop").volume = 0.5;
