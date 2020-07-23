@@ -56,10 +56,13 @@ header, footer{
 }
 
 footer{
-    text-align: left;
-    clear: both;
+    flex:1;
 }
-
+ #footer{
+     position: fixed;
+     bottom: 0;
+    height: 60px;
+ } 
 ::selection{
     color: #FF0000;
     outline: 5px dotted #FF0000;
