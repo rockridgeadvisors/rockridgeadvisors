@@ -1,0 +1,795 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    
+    <!-- Bootstrap CSS  v4 -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <title>Rock Ridge-Security Types</title>
+    <link rel="icon" type="image/png" href="Images/RockRidge_Logo_Only.jpg" />
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body class=background-pic-hidden>
+    <h2 class="text-center"> Security Types </h2>
+<table border="1" class="dataframe table table-bordered small mx_auto">
+  <thead>
+    <tr style="text-align: center;">
+      <th>SecTypeName</th>
+      <th>Description</th>
+      <th>AssetType</th>
+      <th>Product</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>CDS</td>
+      <td>CreditDefaultSwap</td>
+      <td>CDS</td>
+      <td>CDS</td>
+    </tr>
+    <tr>
+      <td>CDSI</td>
+      <td>CDS Index</td>
+      <td>CDS</td>
+      <td>CDS</td>
+    </tr>
+    <tr>
+      <td>SovereignCDS</td>
+      <td>Sovereign CDS</td>
+      <td>CDS</td>
+      <td>CDS</td>
+    </tr>
+    <tr>
+      <td>CDST</td>
+      <td>CDS Index Tranche</td>
+      <td>CDS</td>
+      <td>CDS</td>
+    </tr>
+    <tr>
+      <td>CDSO</td>
+      <td>CDS Option</td>
+      <td>CDS</td>
+      <td>CDS</td>
+    </tr>
+    <tr>
+      <td>RecoveryLock</td>
+      <td>Recovery Lock</td>
+      <td>CDS</td>
+      <td>CDS</td>
+    </tr>
+    <tr>
+      <td>RecoverySwap</td>
+      <td>Recovery Swap</td>
+      <td>CDS</td>
+      <td>CDS</td>
+    </tr>
+    <tr>
+      <td>TotalReturnIndex</td>
+      <td>Total Return Index</td>
+      <td>Commodity</td>
+      <td>Commodity</td>
+    </tr>
+    <tr>
+      <td>CommoditySwap</td>
+      <td>Commodity Swap</td>
+      <td>Commodity</td>
+      <td>Commodity</td>
+    </tr>
+    <tr>
+      <td>InflationIndex</td>
+      <td>Inflation Index</td>
+      <td>Commodity</td>
+      <td>Commodity</td>
+    </tr>
+    <tr>
+      <td>CommodityIndex</td>
+      <td>Commodity Index</td>
+      <td>Commodity</td>
+      <td>Commodity</td>
+    </tr>
+    <tr>
+      <td>CommodFutOption</td>
+      <td>Commodity Futures Option</td>
+      <td>Commodity</td>
+      <td>Commodity</td>
+    </tr>
+    <tr>
+      <td>Commodity</td>
+      <td>Commodity</td>
+      <td>Commodity</td>
+      <td>Commodity</td>
+    </tr>
+    <tr>
+      <td>Index</td>
+      <td>Index</td>
+      <td>Commodity</td>
+      <td>Commodity</td>
+    </tr>
+    <tr>
+      <td>EnergyFut</td>
+      <td>Energy Future</td>
+      <td>Commodity</td>
+      <td>Commodity</td>
+    </tr>
+    <tr>
+      <td>CommodFut</td>
+      <td>Commodity Future</td>
+      <td>Commodity</td>
+      <td>Commodity</td>
+    </tr>
+    <tr>
+      <td>CommodOpt</td>
+      <td>Commodity Option</td>
+      <td>Commodity</td>
+      <td>Commodity</td>
+    </tr>
+    <tr>
+      <td>Corp</td>
+      <td>Corporate Bond</td>
+      <td>Corp</td>
+      <td>Bond</td>
+    </tr>
+    <tr>
+      <td>Floater</td>
+      <td>Floating Rate Security</td>
+      <td>Corp</td>
+      <td>Bond</td>
+    </tr>
+    <tr>
+      <td>PFD</td>
+      <td>Preferred Stock</td>
+      <td>Corp</td>
+      <td>Bond</td>
+    </tr>
+    <tr>
+      <td>Perpetual</td>
+      <td>Perpetual Bond</td>
+      <td>Corp</td>
+      <td>Bond</td>
+    </tr>
+    <tr>
+      <td>BondIndex</td>
+      <td>Bond Index</td>
+      <td>Corp</td>
+      <td>Bond</td>
+    </tr>
+    <tr>
+      <td>BridgeLoan</td>
+      <td>Bridge Loan</td>
+      <td>Corp</td>
+      <td>Bond</td>
+    </tr>
+    <tr>
+      <td>PrefBond</td>
+      <td>Preferred Bond</td>
+      <td>Corp</td>
+      <td>Bond</td>
+    </tr>
+    <tr>
+      <td>RevFin</td>
+      <td>Revolving Financing</td>
+      <td>Corp</td>
+      <td>Bond</td>
+    </tr>
+    <tr>
+      <td>PrivNote</td>
+      <td>Private Note</td>
+      <td>Corp</td>
+      <td>Bond</td>
+    </tr>
+    <tr>
+      <td>FinNote</td>
+      <td>Financing Note</td>
+      <td>Corp</td>
+      <td>Bond</td>
+    </tr>
+    <tr>
+      <td>CLN</td>
+      <td>Credit Linked Note</td>
+      <td>Corp</td>
+      <td>Bond</td>
+    </tr>
+    <tr>
+      <td>Convert</td>
+      <td>Convertible Bond</td>
+      <td>Corp</td>
+      <td>Equity</td>
+    </tr>
+    <tr>
+      <td>SWG</td>
+      <td>Swingline Facility</td>
+      <td>Corp</td>
+      <td>Loan</td>
+    </tr>
+    <tr>
+      <td>ARP</td>
+      <td>Auction Rate Preferred</td>
+      <td>Corp</td>
+      <td>MoneyMarket</td>
+    </tr>
+    <tr>
+      <td>ARS</td>
+      <td>Auction Rate Security</td>
+      <td>Corp</td>
+      <td>MoneyMarket</td>
+    </tr>
+    <tr>
+      <td>ABS</td>
+      <td>Asset Backed Security</td>
+      <td>Corp</td>
+      <td>Mortgage</td>
+    </tr>
+    <tr>
+      <td>CurrencySwap</td>
+      <td>Currency Swap</td>
+      <td>Currency</td>
+      <td>Swap</td>
+    </tr>
+    <tr>
+      <td>PerfectSwap</td>
+      <td>Perfect Asset Swap</td>
+      <td>Currency</td>
+      <td>Swap</td>
+    </tr>
+    <tr>
+      <td>OptionBundle</td>
+      <td>Option Bundle</td>
+      <td>Deposit</td>
+      <td>Commodity</td>
+    </tr>
+    <tr>
+      <td>IDIOption</td>
+      <td>IDI Option</td>
+      <td>Deposit</td>
+      <td>MoneyMarket</td>
+    </tr>
+    <tr>
+      <td>FraFut</td>
+      <td>FRA Future</td>
+      <td>Deposit</td>
+      <td>MoneyMarket</td>
+    </tr>
+    <tr>
+      <td>CP</td>
+      <td>Commercial Paper</td>
+      <td>Deposit</td>
+      <td>MoneyMarket</td>
+    </tr>
+    <tr>
+      <td>SerialDFut</td>
+      <td>Serial Deposit Future</td>
+      <td>Deposit</td>
+      <td>MoneyMarket</td>
+    </tr>
+    <tr>
+      <td>FundsFutOption</td>
+      <td>Funds Future Option</td>
+      <td>Deposit</td>
+      <td>MoneyMarket</td>
+    </tr>
+    <tr>
+      <td>BrazilDepositFuture</td>
+      <td>Brazil Deposit Future</td>
+      <td>Deposit</td>
+      <td>MoneyMarket</td>
+    </tr>
+    <tr>
+      <td>BrazilTBill</td>
+      <td>Brazil Treasury Bill</td>
+      <td>Deposit</td>
+      <td>MoneyMarket</td>
+    </tr>
+    <tr>
+      <td>BA</td>
+      <td>Bankers Acceptance</td>
+      <td>Deposit</td>
+      <td>MoneyMarket</td>
+    </tr>
+    <tr>
+      <td>DFutOption</td>
+      <td>Option on Deposit Future</td>
+      <td>Deposit</td>
+      <td>MoneyMarket</td>
+    </tr>
+    <tr>
+      <td>Funds</td>
+      <td>Federal Funds</td>
+      <td>Deposit</td>
+      <td>MoneyMarket</td>
+    </tr>
+    <tr>
+      <td>FundsFut</td>
+      <td>Federal Funds Future</td>
+      <td>Deposit</td>
+      <td>MoneyMarket</td>
+    </tr>
+    <tr>
+      <td>Deposit</td>
+      <td>Deposit</td>
+      <td>Deposit</td>
+      <td>MoneyMarket</td>
+    </tr>
+    <tr>
+      <td>FRA</td>
+      <td>Floating Rate Agreement</td>
+      <td>Deposit</td>
+      <td>MoneyMarket</td>
+    </tr>
+    <tr>
+      <td>DepositFixing</td>
+      <td>Deposit Fixing</td>
+      <td>Deposit</td>
+      <td>MoneyMarket</td>
+    </tr>
+    <tr>
+      <td>CMB</td>
+      <td>Constant Maturity Bill</td>
+      <td>Deposit</td>
+      <td>Swap</td>
+    </tr>
+    <tr>
+      <td>EMBond</td>
+      <td>EM Bond</td>
+      <td>EMBond</td>
+      <td>Bond</td>
+    </tr>
+    <tr>
+      <td>PRIV</td>
+      <td>Private Company</td>
+      <td>Equity</td>
+      <td>Equity</td>
+    </tr>
+    <tr>
+      <td>PostReorgEquity</td>
+      <td>Post-Reorg Equity</td>
+      <td>Equity</td>
+      <td>Equity</td>
+    </tr>
+    <tr>
+      <td>Warrant</td>
+      <td>Warrant</td>
+      <td>Equity</td>
+      <td>Equity</td>
+    </tr>
+    <tr>
+      <td>Right</td>
+      <td>Right</td>
+      <td>Equity</td>
+      <td>Equity</td>
+    </tr>
+    <tr>
+      <td>Claim</td>
+      <td>Bankruptcy Claim</td>
+      <td>Equity</td>
+      <td>Equity</td>
+    </tr>
+    <tr>
+      <td>ETF</td>
+      <td>Exchange Traded Fund</td>
+      <td>Equity</td>
+      <td>Equity</td>
+    </tr>
+    <tr>
+      <td>EqCFD</td>
+      <td>Equity Contract for Difference</td>
+      <td>Equity</td>
+      <td>Equity</td>
+    </tr>
+    <tr>
+      <td>EqIndex</td>
+      <td>Equity Index</td>
+      <td>Equity</td>
+      <td>Equity</td>
+    </tr>
+    <tr>
+      <td>IndexOpt</td>
+      <td>Equity Index Option</td>
+      <td>Equity</td>
+      <td>Equity</td>
+    </tr>
+    <tr>
+      <td>IndexFutOption</td>
+      <td>Index Future Option</td>
+      <td>Equity</td>
+      <td>Equity</td>
+    </tr>
+    <tr>
+      <td>ConvPfd</td>
+      <td>Convertible Preferred</td>
+      <td>Equity</td>
+      <td>Equity</td>
+    </tr>
+    <tr>
+      <td>VarianceSwap</td>
+      <td>Variance Swap</td>
+      <td>Equity</td>
+      <td>Equity</td>
+    </tr>
+    <tr>
+      <td>MutualFund</td>
+      <td>Mutual Fund</td>
+      <td>Equity</td>
+      <td>Equity</td>
+    </tr>
+    <tr>
+      <td>EqOpt</td>
+      <td>Equity Option</td>
+      <td>Equity</td>
+      <td>Equity</td>
+    </tr>
+    <tr>
+      <td>IndexFut</td>
+      <td>Index Future</td>
+      <td>Equity</td>
+      <td>Equity</td>
+    </tr>
+    <tr>
+      <td>Equity</td>
+      <td>Equity</td>
+      <td>Equity</td>
+      <td>Equity</td>
+    </tr>
+    <tr>
+      <td>FXFWD</td>
+      <td>FX Forward</td>
+      <td>FX</td>
+      <td>Currency</td>
+    </tr>
+    <tr>
+      <td>CurrFut</td>
+      <td>Currency Future</td>
+      <td>FX</td>
+      <td>Currency</td>
+    </tr>
+    <tr>
+      <td>NDF</td>
+      <td>Non-deliverable FX Forward</td>
+      <td>FX</td>
+      <td>Currency</td>
+    </tr>
+    <tr>
+      <td>FX</td>
+      <td>Foreign Exchange</td>
+      <td>FX</td>
+      <td>Currency</td>
+    </tr>
+    <tr>
+      <td>FXOpt</td>
+      <td>Currency Option</td>
+      <td>FX</td>
+      <td>Currency</td>
+    </tr>
+    <tr>
+      <td>BrazilILBond</td>
+      <td>Brazil Index-Linked Bond</td>
+      <td>GovtBond</td>
+      <td>Bond</td>
+    </tr>
+    <tr>
+      <td>BFutOption</td>
+      <td>Option on Bond Future</td>
+      <td>GovtBond</td>
+      <td>Bond</td>
+    </tr>
+    <tr>
+      <td>BondOption</td>
+      <td>Option on Bond</td>
+      <td>GovtBond</td>
+      <td>Bond</td>
+    </tr>
+    <tr>
+      <td>Linker</td>
+      <td>Inflation Indexed Bond</td>
+      <td>GovtBond</td>
+      <td>Bond</td>
+    </tr>
+    <tr>
+      <td>Agency</td>
+      <td>Agency Bond</td>
+      <td>GovtBond</td>
+      <td>Bond</td>
+    </tr>
+    <tr>
+      <td>GovtBond</td>
+      <td>Govt Bond</td>
+      <td>GovtBond</td>
+      <td>Bond</td>
+    </tr>
+    <tr>
+      <td>Strip</td>
+      <td>Bond IO Strip</td>
+      <td>GovtBond</td>
+      <td>Bond</td>
+    </tr>
+    <tr>
+      <td>GDN</td>
+      <td>Global Depository Note</td>
+      <td>GovtBond</td>
+      <td>Bond</td>
+    </tr>
+    <tr>
+      <td>BFut</td>
+      <td>Bond Future</td>
+      <td>GovtBond</td>
+      <td>Future</td>
+    </tr>
+    <tr>
+      <td>Bill</td>
+      <td>Treasury Bill</td>
+      <td>GovtBond</td>
+      <td>MoneyMarket</td>
+    </tr>
+    <tr>
+      <td>CMT</td>
+      <td>Constant Maturity Treasury</td>
+      <td>GovtBond</td>
+      <td>Swap</td>
+    </tr>
+    <tr>
+      <td>InfSwap</td>
+      <td>InflationSwap</td>
+      <td>Inflation</td>
+      <td>Inflation</td>
+    </tr>
+    <tr>
+      <td>InflationCap</td>
+      <td>Inflation Cap</td>
+      <td>Inflation</td>
+      <td>Inflation</td>
+    </tr>
+    <tr>
+      <td>InfZero</td>
+      <td>Inflation Zero</td>
+      <td>Inflation</td>
+      <td>Inflation</td>
+    </tr>
+    <tr>
+      <td>Revolver</td>
+      <td>Revolver</td>
+      <td>Loan</td>
+      <td>Loan</td>
+    </tr>
+    <tr>
+      <td>BankDebt</td>
+      <td>Bank Debt</td>
+      <td>Loan</td>
+      <td>Loan</td>
+    </tr>
+    <tr>
+      <td>ABR</td>
+      <td>Asset Backed Revolver</td>
+      <td>Loan</td>
+      <td>Loan</td>
+    </tr>
+    <tr>
+      <td>ReinvestmentAsset</td>
+      <td>Reinvestment Asset</td>
+      <td>Loan</td>
+      <td>Loan</td>
+    </tr>
+    <tr>
+      <td>Inverse</td>
+      <td>Mortgage Inverse</td>
+      <td>Mortgage</td>
+      <td>Mortgage</td>
+    </tr>
+    <tr>
+      <td>TBAOption</td>
+      <td>TBA Option</td>
+      <td>Mortgage</td>
+      <td>Mortgage</td>
+    </tr>
+    <tr>
+      <td>MTGE(CCPN)</td>
+      <td>Mortgage Current Coupon Index</td>
+      <td>Mortgage</td>
+      <td>Mortgage</td>
+    </tr>
+    <tr>
+      <td>TBA</td>
+      <td>Mortgage TBA</td>
+      <td>Mortgage</td>
+      <td>Mortgage</td>
+    </tr>
+    <tr>
+      <td>TBA(Index)</td>
+      <td>Mortgage TBA Coupon Index</td>
+      <td>Mortgage</td>
+      <td>Mortgage</td>
+    </tr>
+    <tr>
+      <td>MortgageBond</td>
+      <td>Mortgage Bond</td>
+      <td>Mortgage</td>
+      <td>Mortgage</td>
+    </tr>
+    <tr>
+      <td>IO</td>
+      <td>Mortgage IO Strip</td>
+      <td>Mortgage</td>
+      <td>Mortgage</td>
+    </tr>
+    <tr>
+      <td>PO</td>
+      <td>Mortgage PO Strip</td>
+      <td>Mortgage</td>
+      <td>Mortgage</td>
+    </tr>
+    <tr>
+      <td>Muni</td>
+      <td>Municipal Bond</td>
+      <td>Muni</td>
+      <td>Bond</td>
+    </tr>
+    <tr>
+      <td>PRE</td>
+      <td>Private Real Estate</td>
+      <td>Private Equity</td>
+      <td>Equity</td>
+    </tr>
+    <tr>
+      <td>PrivateEquity</td>
+      <td>Private Equity</td>
+      <td>Private Equity</td>
+      <td>Equity</td>
+    </tr>
+    <tr>
+      <td>Repo</td>
+      <td>Term Repos</td>
+      <td>Repo</td>
+      <td>MoneyMarket</td>
+    </tr>
+    <tr>
+      <td>FuturesRepo</td>
+      <td>Repo for Contracts</td>
+      <td>Repo</td>
+      <td>MoneyMarket</td>
+    </tr>
+    <tr>
+      <td>OIS</td>
+      <td>Overnight Index Swap</td>
+      <td>Repo</td>
+      <td>MoneyMarket</td>
+    </tr>
+    <tr>
+      <td>CMBX</td>
+      <td>CMBS Index</td>
+      <td>StructuredFinance</td>
+      <td>CDS</td>
+    </tr>
+    <tr>
+      <td>ABCDS</td>
+      <td>Asset Backed CDS</td>
+      <td>StructuredFinance</td>
+      <td>CDS</td>
+    </tr>
+    <tr>
+      <td>ABX</td>
+      <td>ABCDS Index</td>
+      <td>StructuredFinance</td>
+      <td>CDS</td>
+    </tr>
+    <tr>
+      <td>CMBS</td>
+      <td>CMBS</td>
+      <td>StructuredFinance</td>
+      <td>Mortgage</td>
+    </tr>
+    <tr>
+      <td>CLO</td>
+      <td>Collateralized Loan Obligation</td>
+      <td>StructuredFinance</td>
+      <td>Mortgage</td>
+    </tr>
+    <tr>
+      <td>CDO</td>
+      <td>Collateralized Debt Obligation</td>
+      <td>StructuredFinance</td>
+      <td>Mortgage</td>
+    </tr>
+    <tr>
+      <td>CLOEquity</td>
+      <td>CLO Equity</td>
+      <td>StructuredFinance</td>
+      <td>Mortgage</td>
+    </tr>
+    <tr>
+      <td>RMBS</td>
+      <td>Residential MBS</td>
+      <td>StructuredFinance</td>
+      <td>Mortgage</td>
+    </tr>
+    <tr>
+      <td>StudentLoan</td>
+      <td>Student Loan</td>
+      <td>StructuredFinance</td>
+      <td>Mortgage</td>
+    </tr>
+    <tr>
+      <td>PassThrough</td>
+      <td>Pass-Through</td>
+      <td>StructuredFinance</td>
+      <td>Mortgage</td>
+    </tr>
+    <tr>
+      <td>SwapFut</td>
+      <td>Swap Future</td>
+      <td>Swap</td>
+      <td>Future</td>
+    </tr>
+    <tr>
+      <td>DFut</td>
+      <td>Deposit Future</td>
+      <td>Swap</td>
+      <td>MoneyMarket</td>
+    </tr>
+    <tr>
+      <td>SpreadFut</td>
+      <td>Spread Future</td>
+      <td>Swap</td>
+      <td>MoneyMarket</td>
+    </tr>
+    <tr>
+      <td>NTRS</td>
+      <td>Notional Total Return Swap</td>
+      <td>Swap</td>
+      <td>Swap</td>
+    </tr>
+    <tr>
+      <td>TRS</td>
+      <td>Total Return Swap</td>
+      <td>Swap</td>
+      <td>Swap</td>
+    </tr>
+    <tr>
+      <td>Swap</td>
+      <td>Swap</td>
+      <td>Swap</td>
+      <td>Swap</td>
+    </tr>
+    <tr>
+      <td>DEPRECATED</td>
+      <td>Swap Contract</td>
+      <td>Swap</td>
+      <td>Swap</td>
+    </tr>
+    <tr>
+      <td>SOP</td>
+      <td>Swaption</td>
+      <td>Swap</td>
+      <td>Swap</td>
+    </tr>
+    <tr>
+      <td>RateOption</td>
+      <td>Interest Rate Cap/Floor</td>
+      <td>Swap</td>
+      <td>Swap</td>
+    </tr>
+    <tr>
+      <td>CMSOption</td>
+      <td>CMS Option</td>
+      <td>Swap</td>
+      <td>Swap</td>
+    </tr>
+    <tr>
+      <td>BasisSwap</td>
+      <td>Basis Swap</td>
+      <td>Swap</td>
+      <td>Swap</td>
+    </tr>
+    <tr>
+      <td>CMS</td>
+      <td>Constant Maturity Swap</td>
+      <td>Swap</td>
+      <td>Swap</td>
+    </tr>
+  </tbody>
+</table>
+</body>
+</html>

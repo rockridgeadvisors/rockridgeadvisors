@@ -35,6 +35,9 @@ body{
     background-blend-mode: color;
     height:100vh;
 }
+#background-pic-hidden{
+    background-size: 0,0;
+}
 details{
     background-color: #ADD8E6;
     font-style: italic;
@@ -137,10 +140,13 @@ main,
 .Risksim  {
     min-height: 80vh!important;
 }
-
+.fa-cog {
+    color: white;
+}
 .fa-superpowers,
 .fa-sliders-h,
 .fa-bar-chart,
-.fa-cubes {
-    color: #0000CD; /* 8B dark, CD medium, FF blue
+.fa-cubes
+{
+    color: #0000CD; /* 8B dark, CD medium, FF blue*/
 }
