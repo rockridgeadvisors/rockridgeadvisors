@@ -35,8 +35,9 @@ body{
     background-blend-mode: color;
     height:100vh;
 }
-#background-pic-hidden{
-    background-size: 0,0;
+.background-pic-hidden{
+    background-size: 0%,0%;
+    background-image: none !important;
 }
 details{
     background-color: #ADD8E6;
