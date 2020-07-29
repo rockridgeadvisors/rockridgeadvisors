@@ -151,3 +151,14 @@ main,
 {
     color: #0000CD; /* 8B dark, CD medium, FF blue*/
 }
+/* Fixed Table Header  */
+.table-responsive{
+    /* height:400px;   */
+    overflow:scroll;
+  }
+   thead tr:nth-child(1) th{
+      background: powderblue;
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
