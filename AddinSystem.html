@@ -50,7 +50,7 @@
         <div class="container-fluid p-1 p-md-1 mx-1 mx-md-3">
             <div class="row">
                 <div id="video_pop" onclick="onPopClick()"></div>
-                <div class="ml-3 mr-2 col-12 col-md-6 col-lg-3 ml-3 mr-2 bg-light px-2">
+                <div class="ml-3 mr-2 col-12 col-md-6 col-lg-3 ml-3 mr-2 bg-light px-2 vh80">
                     <h3 class=""><i class="fa fa-bar-chart"></i> <b>Addinsystem</b>: evaluating complex securities in realtime.</h3>
                     <p class="px-2">When the analytics functionality was created in the 1990's, the essential requirement was
                         that the analytics needed to be available in realtime.  Curves had to be calibrated using market inputs and securities had to be 
@@ -79,14 +79,31 @@
                                 easy to feed a data warehouse that can be used to perform Form-PF, AIFMD, and Opera reporting.</p>            
                         </details>
                         <details class="mx-1 mx-md-3 mb-1 px-2"> 
-                            <summary>Data Manipulation</summary>
+                            <summary>Price Transformations</summary>
+                            <p>For many purposes, having access to prices does not tell the whole story.  In fact, it is more common that we want to
+                                track derivative measures such yields, spreads, default probabilities or analyze first differences, log differences or
+                                percentage differences over arbitray time periods.  In addition, particularly for economic statistics, we want to 
+                                use some sort of smoothing to dampen the noise by using moving averages or filters, such as the Hodrick-Prescott filter.
+                                For example, the most useful transformation of jobless claims is the year-over-year percentage change in the 12-week
+                                moving average.  The Hodrick-Prescott filter is used to smooth out the infamously volatile productivity series
+                                to estimate trend productivity.  RiskSim makes it easy to retrive these transformations.                                
+                                .</p>            
+                        </details>
+                        <details class="mx-1 mx-md-3 mb-1 px-2"> 
+                            <summary>Statistical Analysis</summary>
+                            <p>For indepth statistical analyis, it is common to use R or Jupyter notebooks--but not all analysts are data scientists!
+                                RiskSim provides functionality that can be easily applied to data.  RiskSim's DataMatrix facilitates loading transformed
+                                price data for use in statistical analysis.  Whether it's looking for indicators that can be useful in predicting
+                                recessions or bear markets using Logit Regression or dimensionality reduction using eigensystem analysis such 
+                                as principal component analysis, RiskSim makes it easy for users to explore the data!                                
+                                .</p>            
+                        </details>
+                        <details class="mx-1 mx-md-3 mb-1 px-2"> 
+                            <summary>MacroEconomic Analysis</summary>
                             <p>RiskSim is designed for more than security analytics.  It is also designed to provide tools to aid in monitoring the
                                 macroeconomic environment--which is critical give then impact of macroeconomic shifts on risk management.
-                                A flexible set of price transformation, data containers and statistical methods enables this analysis.  
-                                Given the noise in most economic series, we are usually more interest in transformations (e.g. first differences or 
-                                log differences) of moving averages or other transformations of the raw data series (e.g. some moving average) than we are
-                                in the raw data series itself.  It is common to want to perform some sort of eigensystem analyis or logit regression
-                                to understand the implications of movements in economic data for risk management.
+                                A flexible set of price transformations, data containers and statistical methods provides users with the ability
+                                to take their analysis a step further.                                
                                 .</p>            
                         </details>
                         <details class="mx-1 mx-md-3 mb-1 px-2"> 
@@ -94,6 +111,27 @@
                             <p>The only limitation is the existence of fitting securities.  Treasury curves.  Swap curves vs. 3M fixings or 6M fixings.
                                 Currency swap curves that reflect the fx basis.  OIS, EONIA, SONIA, SOFR, Prime, SIFMA.  Default curves fit to CDS.  
                                 You name it, RiskSim can produce it.
+                            </p>            
+                        </details>
+                        <details class="mx-1 mx-md-3 mb-1 px-2"> 
+                            <summary>Cashflow Analysis.</summary>
+                            <p>With RiskSim, you can easily view projected cashflows by component:  principal flows, interest, writeoffs, fees,
+                                inkind payments as well as track the principal balance, projected coupons and any financing-related flows.
+                                In addition, RiskSim can handle withholding taxes which are common in emerging markets.                                
+                            </p>            
+                        </details>
+                        <details class="mx-1 mx-md-3 mb-1 px-2"> 
+                            <summary>Levered Security Analysis.</summary>
+                            <p>Say that you are buying AAA assets and levering them up 3-1 at 1M OIS+100bp with a 30% advance rate.  
+                                With RiskSim, you can set up security financings and calculate leveraged yields as well as track 
+                                the projected financing flows to see the exact economics of the trade.
+                            </p>            
+                        </details>
+                        <details class="mx-1 mx-md-3 mb-1 px-2"> 
+                            <summary>Total Return Analysis.</summary>
+                            <p>You can track projected performance by setting a target (price, spread, yield, OAS) and a time horizon.
+                                RiskSim will calculate the horizon return along with the horizon components:  income, capital gain, price amortization,
+                                horizon price.  In addition, you can examine the horizon flows.                                
                             </p>            
                         </details>
                         <details class="mx-1 mx-md-3 mb-1 px-2"> 
@@ -114,9 +152,16 @@
                         </details>
                         <details class="mx-1 mx-md-3 mb-1 px-2"> 
                             <summary>Default Curve Analysis</summary>
-                            <p>Devised flexible framework to evaluate CDS vs. cash securities for traders.  Switch from 100bp to 500bp running 
-                                or from spread to upfront points on the fly.
+                            <p>Devised flexible framework to evaluate CDS vs. cash securities for traders.  Switch between 100bp running 500bp running 
+                                or handle changes from spread to upfront points on the fly.  For bonds, you can calculate a "default curve OAS" that enables
+                                comparisons between relative value in CDS versus cash bonds.
 
+                            </p>            
+                        </details>
+                        <details class="mx-1 mx-md-3 mb-1 px-2"> 
+                            <summary>Default Analysis</summary>
+                            <p>RiskSim has implemented three versions of the traditional Merton model to project default probabilities using
+                                a firm's debt and its equity price.
                             </p>            
                         </details>
                         <details class="mx-1 mx-md-3 mb-1 px-2"> 

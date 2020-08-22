@@ -162,3 +162,6 @@ thead tr:nth-child(1) th{
     top: 0;
     z-index: 10;
 }
+.vh80{
+    min-height: 70vh!important;
+}
