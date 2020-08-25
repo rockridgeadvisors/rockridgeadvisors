@@ -14,7 +14,7 @@
     <link rel="icon" type="image/png" href="Images/RockRidge_Logo_Only.jpg" />
     <link rel="stylesheet" href="css/Style.css">
 </head>
-<body class="ridge">
+<body class="mw-100">
      <nav class="navbar navbar-expand-md navbar-primary bg-primary static-top">
         <div class="container">
             <a class="navbar-brand col-6" href="#">
@@ -34,7 +34,7 @@
                 <li class="nav-item">
                     <a class ="nav-item nav-link border border-white text-white rounded m-1 p-1" href="RiskSim.html" >RiskSim</a>
                 </li>
-                <li class="nav-item">
+                <li class="nav-item active">
                     <a class ="nav-item nav-link border border-white text-white rounded m-1 p-1" href="ReconciliationTools.html" >ReconciliationTools</a>
                 </li>
                 <li class="nav-item">
@@ -44,61 +44,61 @@
             </div>
         </div>
     </nav>
-<!-- <div class="jumbotron col-3 opacity-4"> -->
-        <div class="container ml-5">
-            <div class="row col-12 col-md-5 col-lg-3 bg-light ">
-                <h3 class=""><b>ReconciliationTools</b>: reporting to track the settlement and returns of a fund</h3>
-                <p>What started off as some VBA routines to promote the reconciliation of security settlements grew into a full-fledged strategy P&L system
-                    that not only calculates P&L, but enables the analysis of the P&L along many dimensions.
-                </p>
-            </div>     
-        </div>
-    <!-- </div> -->
-    
-    <!-- <section class="Projects"> -->
-        <h3 class="container text-left ml-3 mt-5 bg-light bg-md-none opacity-4">Notable Features</h3>
-        <div class="container ml-3 mb-5"> 
-            <details>
-                <summary>Scenario Shock Analysis</summary>
-                <p>Devised methodology to shock portfolio securities.</p>            
-            </details>
-            <details>
-                <summary>Scenario Horizon Analysis</summary>
-                <p>Devised methodology to analyze contribution of hedges.</p>            
-            </details>
-            <details>
-                <summary>Carry Analysis</summary>
-                <p>Devised methodology to estimate "true" carry.</p>            
-            </details>
-            <details>
-                <summary>Regulatory</summary>
-                <p>Devised methodology to perform Form-PF, AIFMD, and Opera reporting.</p>            
-            </details>
-            <details>
-                <summary>Liqudity Analysis</summary>
-                <p>Devised methodology to analyze liquidity of portfolios.</p>            
-            </details>
-            <details>
-                <summary>Stress Indicators</summary>
-                <p>Devised methodology to determine risk of moving into a systemic environment.</p>            
-            </details>
-            <details>
-                <summary>Portfolio Attribution</summary>
-                <p>Devised methodology to analyze attribution for total return portfolios.</p>            
-            </details>
-            <details>
-                <summary>Rate-Spread Decomposition</summary>
-                <p>Devised methodology to break down P&L to analyse it's source.</p>            
-            </details>
-            <details>
-                <summary>Currency-adjusted Yield/Spreads</summary>
-                <p>Devised methodology to adjust yields and spread to reflect rate differentials and cross-currency basis.</p>            
-            </details>
-            <details>
-                <summary>Default Curve Analysis</summary>
-                <p>Devised flexible framework to evaluate CDS vs. cash securities for traders.</p>            
-            </details>
-            
-        </div>
-    <!-- </section> -->
+    <main class="d-flex flex-column mw-100">
+        <div class="container-fluid RiskSim p-1 mx-1 mx-md-3">
+            <div class="row">
+                <div class="ml-3 mr-2 col-12 col-md-6 col-lg-3 ml-3 mr-2 bg-light px-2 vh80">
+                    <h3 class=""><b>ReconciliationTools</b>: reporting to track the settlement and returns of a fund</h3>
+                    <p>ReconciliationTools started off as a collection of VBA routines to automate the reconciliation of security settlements and positions,
+                        but because of the limitations of commercially available strategy P&L systems--that were more geared to commodity-equity-currency
+                        portfolios and couldn't properly handle the needs of multi-currency fixed income portfolios, 
+                        it grew into a full-fledged strategy P&L system
+                        that not only calculates P&L, but enables the analysis of the P&L along many dimensions.
+                    </p>
+                </div>     
+                <div class="align-self-end col-12 col-md-6 col-lg-8 text-left mx-1 p-0 ml-md-3 mt-md-5 mb-1 px-md-1">
+                    <h3 class="col-12 col-md-4 bg-light mt-3">Notable Features</h3>
+                    <div class="mx-1 mx-md-3 mb-1 px-2">  
+                        <details class="mx-1 mx-md-3 mb-1 px-2"> 
+                            <summary>Full Strategy Level P&L</summary>
+                            <p>Track P&L by Strategy and Sub-Strategy.  </p>            
+                        </details>
+                        <details class="mx-1 mx-md-3 mb-1 px-2"> 
+                            <summary>Strategy Groups</summary>
+                            <p>Useful for grouping together related securities into a single aggregate position for P&L tracking.
+                                This is particularly useful if security-level hedges are assigned to a separate strategy for tracking aggregate hedges.
+                                You can run P&L with strategy grouping to effectively regroup those securities with the securities they are hedging.
+                            </p>            
+                        </details>
+                        <details class="mx-1 mx-md-3 mb-1 px-2"> 
+                            <summary>Choice of Accounting Methods by Security</summary>
+                            <p>The focus of Strategy P&L is generally economic accounting, but since many portfolio accounting systems are not as "security aware" as
+                                RiskSim, RiskSim can generate P&L using other accounting methods.  For example, the tax P&L of securities that pay inkind
+                                is very different from the eocnomic P&L.  RiskSim can use the PAC (Prepay Assumption Catchup) method for interest-only securities
+                                or Basis Recovery methods for distressed securities.  The accounting method can be set at the security level or you can 
+                                run separate reports using different accounting methods.
+                            </p>            
+                        </details>
+                        <details class="mx-1 mx-md-3 mb-1 px-2"> 
+                            <summary>Security Financing Allocation</summary>
+                            <p>For leveraged portfolios, allocate financing interest to put all strategies on an equal footing.  Special financing will be 
+                                allocated properly across positions for issues that are trading tight in the repo market.
+                            </p>            
+                        </details>
+                        <details class="mx-1 mx-md-3 mb-1 px-2"> 
+                            <summary>FX Hedge Allocation</summary>
+                            <p>While the primary focus is on base P&L, high-yielding securities that are hedged back into a base currency often 
+                                incur large currency-hedge carry losses.  RiskSim can allocate the currency-hedge carry to the position to properly
+                                reflect the true economics of the trade.
+                            </p>            
+                        </details>
+                        <details class="mx-1 mx-md-3 mb-1 px-2"> 
+                            <summary>Portfolio Composition Reporting</summary>
+                            <p>Track the portfolio asset mix or other relevant portfolio statistics, such as duration, over time.</p>            
+                        </details>            
+                    </div>
+                </div>
+            </div>              
+    </main>    
+        
 </body>
