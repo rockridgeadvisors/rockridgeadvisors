@@ -1,0 +1,13 @@
+https://stackoverflow.com/questions/58219778/how-to-get-a-direct-link-to-a-file-in-github-lfs-large-file-storage
+
+
+https://media.githubusercontent.com/media/_Username_/_Project_/_Branch_/_Path_to_file_
+
+These links "work", but they download the video instead of playing it in the html.
+
+http://raw.githubusercontent.com/rockridgeadvisors/rockridgeadvisors.github.io/master/Videos/ExcessBondPremium.mp4
+
+https://media.githubusercontent.com/media/rockridgeadvisors/rockridgeadvisors.github.io/master/Videos/ExcessBondPremium.mp4 this one downloads the file, but doesn't work in html
+
+https://media.githubusercontent.com/media/rockridgeadvisors/rockridgeadvisors.github.io/master/Videos/excessbondpremium.mp4
+https://media.githubusercontent.com/media/rockridgeadvisors/rockridgeadvisors.github.io/master/excessbondpremium.mp4
